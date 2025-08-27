@@ -10,6 +10,8 @@
   </script>
   <!-- AOS 动画库 -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Lucide 图标库 -->
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     html { scroll-behavior: smooth; }
     .active-link { color: #3b82f6; font-weight: bold; }
@@ -20,7 +22,7 @@
   <!-- 左侧导航栏 -->
   <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white flex flex-col items-center transition-colors duration-300 dark:bg-gray-800 hidden md:flex">
     <div class="w-full h-32 bg-cover bg-center" style="background-image: url('https://picsum.photos/400/200');"></div>
-    <div class="-mt-12 w-24 h-24 rounded-full border-4 border-white overflow-hidden shadow-lg">
+    <div class="-mt-12 w-24 h-24 rounded-lg border-4 border-white overflow-hidden shadow-lg">
       <img src="https://picsum.photos/200" alt="profile" class="w-full h-full object-cover">
     </div>
     <div class="mt-4 text-center">
@@ -28,7 +30,7 @@
       <p class="text-sm text-gray-300 dark:text-gray-400">Graphic Designer / Event Planner</p>
     </div>
     <nav id="navLinks" class="flex flex-col space-y-6 text-lg mt-10">
-      <a href="#hero" data-i18n="nav_home">ホーム</a>
+      <a href="#hero" data-i18n="nav_home">Home</a>
       <a href="#about" data-i18n="nav_about">自己紹介</a>
       <a href="#works" data-i18n="nav_works">実績一覧</a>
       <a href="#me" data-i18n="nav_me">私について</a>
@@ -36,21 +38,25 @@
       <a href="#portfolio" data-i18n="nav_portfolio">作品展示</a>
       <a href="#contact" data-i18n="nav_contact">お問い合わせ</a>
     </nav>
-    <button onclick="toggleDarkMode()" class="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white text-sm transition">🌙 / ☀️</button>
-    <button onclick="toggleLanguage()" class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white text-sm transition">🌐</button>
+    <button onclick="toggleDarkMode()" class="mt-6 flex items-center space-x-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white text-sm transition">
+      <i data-lucide="moon"></i><span>Dark</span>
+    </button>
+    <button onclick="toggleLanguage()" class="mt-4 flex items-center space-x-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white text-sm transition">
+      <i data-lucide="globe"></i><span>Lang</span>
+    </button>
   </div>
 
   <!-- 手机端顶部导航 -->
   <div class="md:hidden fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center px-4 py-3 z-50 dark:bg-gray-800">
     <span class="font-bold">YE XINXI</span>
     <div class="flex items-center space-x-4">
-      <button onclick="toggleDarkMode()" class="text-xl">🌙</button>
-      <button onclick="toggleLanguage()" class="text-xl">🌐</button>
-      <button onclick="toggleMenu()" class="text-xl">☰</button>
+      <button onclick="toggleDarkMode()" class="text-xl"><i data-lucide="moon"></i></button>
+      <button onclick="toggleLanguage()" class="text-xl"><i data-lucide="globe"></i></button>
+      <button onclick="toggleMenu()" class="text-xl"><i data-lucide="menu"></i></button>
     </div>
   </div>
   <div id="mobileMenu" class="hidden fixed top-14 left-0 w-full bg-gray-900 text-white flex-col items-center py-4 space-y-4 dark:bg-gray-800 z-40 md:hidden">
-    <a href="#hero" onclick="toggleMenu()" data-i18n="nav_home">ホーム</a>
+    <a href="#hero" onclick="toggleMenu()" data-i18n="nav_home">Home</a>
     <a href="#about" onclick="toggleMenu()" data-i18n="nav_about">自己紹介</a>
     <a href="#works" onclick="toggleMenu()" data-i18n="nav_works">実績一覧</a>
     <a href="#me" onclick="toggleMenu()" data-i18n="nav_me">私について</a>
@@ -60,22 +66,22 @@
   </div>
 
   <!-- Hero 区 -->
-  <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
+  <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-700 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
     <div class="max-w-2xl" data-aos="fade-up">
-      <img src="https://picsum.photos/200" alt="profile" class="w-32 h-32 rounded-full border-4 border-white mx-auto mb-6 shadow-lg">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">YE XINXI</h1>
-      <p class="text-lg md:text-xl mb-6">Graphic Designer ・ Event Planner</p>
-      <div class="space-x-4">
-        <a href="#portfolio" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
-          <span data-i18n="hero_btn_work">作品を見る</span>
+      <img src="https://picsum.photos/200" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">YE XINXI</h1>
+      <p class="text-lg md:text-2xl mb-8 opacity-90">Graphic Designer ・ Event Planner</p>
+      <div class="space-x-6">
+        <a href="#portfolio" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-md shadow hover:bg-gray-100 transition">
+          <span data-i18n="hero_btn_work">View Portfolio</span>
         </a>
-        <a href="#contact" class="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-indigo-600 transition">
-          <span data-i18n="hero_btn_contact">お問い合わせ</span>
+        <a href="#contact" class="px-8 py-3 border border-white font-semibold rounded-md hover:bg-white hover:text-indigo-700 transition">
+          <span data-i18n="hero_btn_contact">Contact</span>
         </a>
       </div>
     </div>
-    <div class="absolute bottom-10 animate-bounce">
-      <a href="#about">⬇️</a>
+    <div class="absolute bottom-10 text-white opacity-70">
+      <i data-lucide="chevron-down" class="w-8 h-8 animate-bounce"></i>
     </div>
   </section>
 
@@ -89,11 +95,11 @@
       </h2>
       <div class="relative border-l-4 border-blue-500 ml-4">
         <div class="mb-8 ml-6">
-          <div class="font-semibold">🎓 学歴</div>
+          <div class="font-semibold">学歴</div>
           <p>2021年 京都芸術大学 プロダクトデザイン 大学院卒</p>
         </div>
         <div class="ml-6">
-          <div class="font-semibold">💼 職歴</div>
+          <div class="font-semibold">職歴</div>
           <p>2021 八紘電機株式会社 入社</p>
           <p>2022 CTW株式会社 入社</p>
           <p>2023 株式会社Yostar 入社</p>
@@ -161,15 +167,22 @@
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
         <span data-i18n="contact_title">6. お問い合わせ</span>
       </h2>
-      <p class="mb-4">📩 ご連絡は以下の方法でお願いします：</p>
       <ul class="space-y-2">
-        <li>Email: <a href="mailto:yourmail@example.com" class="text-blue-500 hover:underline">yourmail@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/yourname" class="text-blue-500 hover:underline">github.com/yourname</a></li>
-        <li>
-          <div class="flex space-x-4 mt-2">
-            <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
-            <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
-          </div>
+        <li class="flex items-center space-x-2">
+          <i data-lucide="mail"></i>
+          <a href="mailto:yourmail@example.com" class="hover:underline">yourmail@example.com</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i data-lucide="github"></i>
+          <a href="https://github.com/yourname" target="_blank" class="hover:underline">github.com/yourname</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i data-lucide="linkedin"></i>
+          <a href="https://linkedin.com" target="_blank" class="hover:underline">LinkedIn</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i data-lucide="twitter"></i>
+          <a href="https://twitter.com" target="_blank" class="hover:underline">Twitter</a>
         </li>
       </ul>
     </section>
@@ -181,7 +194,7 @@
     function toggleDarkMode() { document.documentElement.classList.toggle('dark'); }
     function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
 
-    // 滚动时导航高亮
+    // 滚动高亮
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("#navLinks a");
     window.addEventListener("scroll", () => {
@@ -199,21 +212,15 @@
     // 多语言字典
     let currentLang = "ja";
     const i18n = {
-      ja: {
-        nav_home: "ホーム", nav_about: "自己紹介", nav_works: "実績一覧", nav_me: "私について", nav_tools: "使用ツール", nav_portfolio: "作品展示", nav_contact: "お問い合わせ",
-        hero_btn_work: "作品を見る", hero_btn_contact: "お問い合わせ",
-        about_title: "1. 自己紹介", works_title: "2. 実績一覧", me_title: "3. 私について", tools_title: "4. 使用ツール", portfolio_title: "5. 作品展示", contact_title: "6. お問い合わせ"
-      },
-      zh: {
-        nav_home: "首页", nav_about: "自我介绍", nav_works: "实绩一览", nav_me: "关于我", nav_tools: "使用工具", nav_portfolio: "作品展示", nav_contact: "联系方式",
-        hero_btn_work: "查看作品", hero_btn_contact: "联系我",
-        about_title: "1. 自我介绍", works_title: "2. 实绩一览", me_title: "3. 关于我", tools_title: "4. 使用工具", portfolio_title: "5. 作品展示", contact_title: "6. 联系方式"
-      },
-      en: {
-        nav_home: "Home", nav_about: "About", nav_works: "Works", nav_me: "About Me", nav_tools: "Tools", nav_portfolio: "Portfolio", nav_contact: "Contact",
-        hero_btn_work: "View Portfolio", hero_btn_contact: "Contact Me",
-        about_title: "1. About Me", works_title: "2. Work Experience", me_title: "3. Myself", tools_title: "4. Tools", portfolio_title: "5. Portfolio", contact_title: "6. Contact"
-      }
+      ja: { nav_home:"ホーム", nav_about:"自己紹介", nav_works:"実績一覧", nav_me:"私について", nav_tools:"使用ツール", nav_portfolio:"作品展示", nav_contact:"お問い合わせ",
+            hero_btn_work:"作品を見る", hero_btn_contact:"お問い合わせ",
+            about_title:"1. 自己紹介", works_title:"2. 実績一覧", me_title:"3. 私について", tools_title:"4. 使用ツール", portfolio_title:"5. 作品展示", contact_title:"6. お問い合わせ" },
+      zh: { nav_home:"首页", nav_about:"自我介绍", nav_works:"实绩一览", nav_me:"关于我", nav_tools:"使用工具", nav_portfolio:"作品展示", nav_contact:"联系方式",
+            hero_btn_work:"查看作品", hero_btn_contact:"联系我",
+            about_title:"1. 自我介绍", works_title:"2. 实绩一览", me_title:"3. 关于我", tools_title:"4. 使用工具", portfolio_title:"5. 作品展示", contact_title:"6. 联系方式" },
+      en: { nav_home:"Home", nav_about:"About", nav_works:"Works", nav_me:"About Me", nav_tools:"Tools", nav_portfolio:"Portfolio", nav_contact:"Contact",
+            hero_btn_work:"View Portfolio", hero_btn_contact:"Contact Me",
+            about_title:"1. About Me", works_title:"2. Work Experience", me_title:"3. Myself", tools_title:"4. Tools", portfolio_title:"5. Portfolio", contact_title:"6. Contact" }
     };
 
     function toggleLanguage() {
@@ -225,6 +232,9 @@
         el.innerText = i18n[currentLang][key] || el.innerText;
       });
     }
+
+    // 初始化图标
+    lucide.createIcons();
   </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
