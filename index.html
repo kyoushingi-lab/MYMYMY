@@ -3,37 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Test</title>
+  <title>MYMYMY - YE XINXI</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', 'Inter', sans-serif; }
+    .nav-bg { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    .dark .nav-bg { background: rgba(17, 24, 39, 0.8); }
+    #backToTop { display:none; }
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animated-bg {
+      background: linear-gradient(-45deg, #667eea, #764ba2, #6b21a8, #3b82f6);
+      background-size: 400% 400%;
+      animation: gradientFlow 15s ease infinite;
+    }
+  </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
 
-  <header class="bg-indigo-600 text-white p-4">
-    <h1 class="text-xl font-bold">YE XINXI</h1>
+  <header class="fixed top-0 left-0 w-full z-50 nav-bg shadow-sm">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-3 px-6">
+      <span class="font-bold text-indigo-600 dark:text-indigo-400">YE XINXI</span>
+      <ul class="hidden md:flex space-x-6 text-sm font-medium">
+        <li><a href="#about" class="nav-link hover:text-indigo-500">自己紹介</a></li>
+        <li><a href="#works" class="nav-link hover:text-indigo-500">実績一覧</a></li>
+        <li><a href="#portfolio" class="nav-link hover:text-indigo-500">作品展示</a></li>
+        <li><a href="#tools" class="nav-link hover:text-indigo-500">使用ツール</a></li>
+        <li><a href="#me" class="nav-link hover:text-indigo-500">私について</a></li>
+        <li><a href="#contact" class="nav-link hover:text-indigo-500">お問い合わせ</a></li>
+      </ul>
+      <div class="flex items-center space-x-4">
+        <button id="darkToggle"><i data-lucide="moon" class="w-6 h-6 text-gray-600 dark:text-gray-200"></i></button>
+        <button id="menuToggle" class="md:hidden"><i data-lucide="menu" class="w-6 h-6 text-gray-600 dark:text-gray-200"></i></button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden flex-col bg-white dark:bg-gray-800 shadow-md px-6 py-4 space-y-4 text-sm font-medium">
+      <a href="#about" class="nav-link block hover:text-indigo-500">自己紹介</a>
+      <a href="#works" class="nav-link block hover:text-indigo-500">実績一覧</a>
+      <a href="#portfolio" class="nav-link block hover:text-indigo-500">作品展示</a>
+      <a href="#tools" class="nav-link block hover:text-indigo-500">使用ツール</a>
+      <a href="#me" class="nav-link block hover:text-indigo-500">私について</a>
+      <a href="#contact" class="nav-link block hover:text-indigo-500">お問い合わせ</a>
+    </div>
   </header>
 
-  <main class="max-w-3xl mx-auto p-6">
-    <section id="about" class="mb-8">
-      <h2 class="text-2xl font-bold mb-2">自己紹介</h2>
-      <p>こんにちは！YE XINXIです。これはテストページです。</p>
+  <section id="hero" class="h-screen flex flex-col justify-center items-center text-center text-white animated-bg">
+    <div class="max-w-2xl" data-aos="fade-up">
+      <img src="cat.jpg" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">YE XINXI</h1>
+      <p class="text-lg md:text-2xl mb-2 opacity-90">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+      <p class="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">Creative & Functional Design for Games and Events</p>
+    </div>
+  </section>
+
+  <main class="mt-20 space-y-16 max-w-6xl mx-auto">
+    <!-- 自己紹介 -->
+    <!-- 实绩一覧 -->
+    <!-- 作品展示 -->
+    <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 作品展示</h2>
+      <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">PCゲーム《FLOWERS》ローカライズプロジェクト</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="https://store.steampowered.com/app/452440/Flowers_Le_volume_sur_printemps/" target="_blank" class="p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+          <img src="https://cdn.akamai.steamstatic.com/steam/apps/452440/header.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+          <h4 class="font-semibold text-lg">Flowers -Le volume sur printemps-</h4>
+          <p class="text-sm">FLOWERS シリーズ第1作「春篇」。ローカライズに参加。</p>
+        </a>
+        <a href="https://store.steampowered.com/app/858940/Flowers_Le_volume_sur_ete/" target="_blank" class="p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+          <img src="https://cdn.akamai.steamstatic.com/steam/apps/858940/header.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+          <h4 class="font-semibold text-lg">Flowers -Le volume sur été-</h4>
+          <p class="text-sm">FLOWERS シリーズ第2作「夏篇」。</p>
+        </a>
+        <a href="https://store.steampowered.com/app/1238730/Flowers_Le_volume_sur_automne/" target="_blank" class="p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+          <img src="https://cdn.akamai.steamstatic.com/steam/apps/1238730/header.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+          <h4 class="font-semibold text-lg">Flowers -Le volume sur automne-</h4>
+          <p class="text-sm">FLOWERS シリーズ第3作「秋篇」。</p>
+        </a>
+        <a href="https://store.steampowered.com/app/1921560/Flowers_Le_volume_sur_hiver/" target="_blank" class="p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+          <img src="https://cdn.akamai.steamstatic.com/steam/apps/1921560/header.jpg" class="w-full h-48 object-cover rounded-lg mb-3">
+          <h4 class="font-semibold text-lg">Flowers -Le volume sur hiver-</h4>
+          <p class="text-sm">FLOWERS シリーズ最終作「冬篇」。</p>
+        </a>
+      </div>
     </section>
 
-    <section id="works" class="mb-8">
-      <h2 class="text-2xl font-bold mb-2">実績一覧</h2>
-      <ul class="list-disc pl-6">
-        <li>2021 八紘電機株式会社</li>
-        <li>2022 CTW株式会社</li>
-        <li>2023 株式会社Yostar</li>
-      </ul>
+    <!-- 私について -->
+    <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 私について</h2>
+      <div class="mb-10">
+        <h3 class="font-semibold text-xl mb-3">猫</h3>
+        <img src="cat.jpg" alt="My Cat" class="w-40 h-40 object-cover rounded-full shadow-lg">
+        <p class="mt-3">ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。</p>
+      </div>
+      <h3 class="font-semibold text-xl mb-3">旅行</h3>
+      <div class="swiper w-full h-72 rounded-lg shadow-md mb-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="travel1.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+          <div class="swiper-slide"><img src="travel2.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+          <div class="swiper-slide"><img src="travel3.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
-    <section id="me" class="mb-8">
-      <h2 class="text-2xl font-bold mb-2">私について</h2>
-      <img src="cat.jpg" alt="My Cat" class="w-40 h-40 rounded-full mb-4">
-      <p>ゴールデンブリティッシュショートヘアーと暮らしています。</p>
+    <!-- お問い合わせ -->
+    <section id="contact" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">6. お問い合わせ</h2>
+      <div class="flex items-center space-x-3">
+        <i data-lucide="mail" class="w-6 h-6 text-indigo-500"></i>
+        <a href="mailto:kyou.shingi@gmail.com" class="text-lg hover:underline">kyou.shingi@gmail.com</a>
+      </div>
     </section>
+
   </main>
 
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition">↑</button>
+  <footer class="text-center py-6 mt-10 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-indigo-400">
+    Built with ❤️ by YE XINXI | © 2025
+  </footer>
+
+  <script>lucide.createIcons();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("darkToggle").addEventListener("click",()=>{document.documentElement.classList.toggle("dark");});
+    document.getElementById("menuToggle").addEventListener("click",()=>{document.getElementById("mobileMenu").classList.toggle("hidden");});
+    const backToTop=document.getElementById("backToTop");
+    window.addEventListener("scroll",()=>{backToTop.style.display=window.scrollY>300?"block":"none";});
+    backToTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+    new Swiper(".swiper",{loop:true,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+  </script>
 </body>
 </html>
-
