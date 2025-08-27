@@ -19,58 +19,12 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
 
-  <!-- 左侧导航栏 -->
-  <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white flex flex-col items-center transition-colors duration-300 dark:bg-gray-800 hidden md:flex">
-    <div class="w-full h-32 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700"></div>
-    <div class="-mt-12 w-24 h-24 rounded-lg border-4 border-white overflow-hidden shadow-lg">
-      <img src="https://picsum.photos/200" alt="profile" class="w-full h-full object-cover">
-    </div>
-    <div class="mt-4 text-center">
-      <h1 class="text-xl font-bold">YE XINXI</h1>
-      <p class="text-sm text-gray-300 dark:text-gray-400">Graphic Designer / Event Planner</p>
-    </div>
-    <nav id="navLinks" class="flex flex-col space-y-6 text-lg mt-10">
-      <a href="#hero" data-i18n="nav_home">Home</a>
-      <a href="#about" data-i18n="nav_about">自己紹介</a>
-      <a href="#works" data-i18n="nav_works">実績一覧</a>
-      <a href="#me" data-i18n="nav_me">私について</a>
-      <a href="#tools" data-i18n="nav_tools">使用ツール</a>
-      <a href="#portfolio" data-i18n="nav_portfolio">作品展示</a>
-      <a href="#contact" data-i18n="nav_contact">お問い合わせ</a>
-    </nav>
-    <button onclick="toggleDarkMode()" class="mt-6 flex items-center space-x-2 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white text-sm transition">
-      <i data-lucide="moon"></i><span>Dark</span>
-    </button>
-    <button onclick="toggleLanguage()" class="mt-4 flex items-center space-x-2 px-4 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg text-white text-sm transition">
-      <i data-lucide="globe"></i><span>Lang</span>
-    </button>
-  </div>
-
-  <!-- 手机端顶部导航 -->
-  <div class="md:hidden fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-between items-center px-4 py-3 z-50 dark:bg-gray-800">
-    <span class="font-bold">YE XINXI</span>
-    <div class="flex items-center space-x-4">
-      <button onclick="toggleDarkMode()" class="text-xl"><i data-lucide="moon"></i></button>
-      <button onclick="toggleLanguage()" class="text-xl"><i data-lucide="globe"></i></button>
-      <button onclick="toggleMenu()" class="text-xl"><i data-lucide="menu"></i></button>
-    </div>
-  </div>
-  <div id="mobileMenu" class="hidden fixed top-14 left-0 w-full bg-gray-900 text-white flex-col items-center py-4 space-y-4 dark:bg-gray-800 z-40 md:hidden">
-    <a href="#hero" onclick="toggleMenu()" data-i18n="nav_home">Home</a>
-    <a href="#about" onclick="toggleMenu()" data-i18n="nav_about">自己紹介</a>
-    <a href="#works" onclick="toggleMenu()" data-i18n="nav_works">実績一覧</a>
-    <a href="#me" onclick="toggleMenu()" data-i18n="nav_me">私について</a>
-    <a href="#tools" onclick="toggleMenu()" data-i18n="nav_tools">使用ツール</a>
-    <a href="#portfolio" onclick="toggleMenu()" data-i18n="nav_portfolio">作品展示</a>
-    <a href="#contact" onclick="toggleMenu()" data-i18n="nav_contact">お問い合わせ</a>
-  </div>
-
   <!-- Hero 区 -->
   <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
     <div class="max-w-2xl" data-aos="fade-up">
       <img src="https://picsum.photos/200" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
       <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">YE XINXI</h1>
-      <p class="text-lg md:text-2xl mb-8 opacity-90">Graphic Designer ・ Event Planner</p>
+      <p class="text-lg md:text-2xl mb-8 opacity-90">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
       <div class="space-x-6">
         <a href="#portfolio" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-md shadow hover:bg-gray-100 transition">
           <span data-i18n="hero_btn_work">View Portfolio</span>
@@ -86,57 +40,114 @@
   </section>
 
   <!-- 主体内容 -->
-  <main class="ml-0 md:ml-64 p-6 md:p-10 space-y-16 mt-14 md:mt-0">
+  <main class="p-6 md:p-10 space-y-16 mt-14 md:mt-0 max-w-4xl mx-auto">
 
     <!-- 自己紹介 -->
     <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
-        <span data-i18n="about_title">1. 自己紹介</span>
-      </h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
+      <p class="font-bold mb-2">YE XINXI</p>
+      <p class="mb-1">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+      <p class="mb-6">ゲーム運営・PM・QA | グラフィックデザイナー | イベントプランナー</p>
+
       <div class="relative border-l-4 border-indigo-500 ml-4">
         <div class="mb-8 ml-6">
           <div class="font-semibold">学歴</div>
-          <p>2021年 京都芸術大学 プロダクトデザイン 大学院卒</p>
+          <p>2021年　京都芸術大学 大学院 プロダクトデザイン専攻　修了</p>
         </div>
         <div class="ml-6">
           <div class="font-semibold">職歴</div>
-          <p>2021 八紘電機株式会社 入社</p>
-          <p>2022 CTW株式会社 入社</p>
-          <p>2023 株式会社Yostar 入社</p>
+          <p>2021年　八紘電機株式会社　入社<br>営業／グラフィックデザイナー／イベントプランナー</p>
+          <p class="mt-2">2022年　CTW株式会社　入社<br>ゲーム運営・プロジェクトマネジメント（PM）・品質保証（QA）</p>
+          <p class="mt-2">2023年　株式会社Yostar　入社（現職）<br>ゲーム運営・QA（テスト設計・検証／品質管理）</p>
         </div>
       </div>
     </section>
 
     <!-- 実績一覧 -->
     <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
-        <span data-i18n="works_title">2. 実績一覧</span>
-      </h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2021 八紘電機株式会社</div>
-        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2022 CTW株式会社</div>
-        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2023 株式会社Yostar</div>
-        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2024 …</div>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 実績一覧</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold mb-2">［職歴］</h3>
+          <ul class="list-disc ml-6">
+            <li>2021–2022　八紘電機株式会社</li>
+            <li>2022–2023　CTW株式会社</li>
+            <li>2023–現在　株式会社Yostar</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">［学生時代］</h3>
+          <p>2014–2019　大学在学中のプロジェクト実績<br>
+             （デザイン制作・イベント企画など、個人活動およびチーム活動として参画）</p>
+        </div>
       </div>
     </section>
 
     <!-- 私について -->
     <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
-        <span data-i18n="me_title">3. 私について</span>
-      </h2>
-      <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
-        <li>SNS</li>
-        <li>翻訳</li>
-        <li>ゲーム</li>
-      </ul>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 私について</h2>
+
+      <div class="space-y-10">
+
+        <!-- 🐱 猫 -->
+        <div>
+          <h3 class="font-semibold text-xl mb-3">猫</h3>
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+            <img src="cat.jpg" alt="My Cat" class="w-40 h-40 object-cover rounded-full shadow-lg">
+            <p class="text-gray-700 dark:text-gray-300">
+              ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。
+            </p>
+          </div>
+        </div>
+
+        <!-- ✈️ 旅行 -->
+        <div>
+          <h3 class="font-semibold text-xl mb-3">旅行</h3>
+          <p class="mb-4">これまでに訪れた場所：</p>
+
+          <!-- Google My Maps 可视化地图 -->
+          <div class="mb-6">
+            <iframe src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID"
+                    width="100%" height="400"
+                    class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600">
+            </iframe>
+          </div>
+
+          <!-- 城市标签 -->
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">東京</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">京都</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">大阪</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">名古屋</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">沖縄</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">北海道</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">石垣島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">宮古島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">滋賀</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">和歌山</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">奈良</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">熊本</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">小豆島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">三重</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">屋久島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">福岡</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">韓国</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">台湾</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">バリ島</span>
+          </div>
+        </div>
+
+        <!-- 🎮 游戏 -->
+        <div>
+          <h3 class="font-semibold text-xl mb-3">ゲーム</h3>
+        </div>
+
+      </div>
     </section>
 
-    <!-- 使用ツール ICON -->
+    <!-- 使用ツール -->
     <section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
-        <span data-i18n="tools_title">4. 使用ツール</span>
-      </h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
         <div class="flex flex-col items-center space-y-2">
           <i data-lucide="image" class="w-10 h-10 text-indigo-400"></i>
@@ -161,44 +172,13 @@
       </div>
     </section>
 
-    <!-- 作品展示 -->
-    <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
-        <span data-i18n="portfolio_title">5. 作品展示</span>
-      </h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600">
-          <h3 class="font-semibold mb-2">企画プレゼン</h3>
-          <iframe src="sample.pdf" class="w-full h-64 rounded-lg"></iframe>
-        </div>
-        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600">
-          <h3 class="font-semibold mb-2">レポート記事</h3>
-          <iframe src="sample2.pdf" class="w-full h-64 rounded-lg"></iframe>
-        </div>
-      </div>
-    </section>
-
     <!-- お問い合わせ -->
     <section id="contact" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
-        <span data-i18n="contact_title">6. お問い合わせ</span>
-      </h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. お問い合わせ</h2>
       <ul class="space-y-3">
         <li class="flex items-center space-x-2">
           <i data-lucide="mail" class="text-indigo-400"></i>
-          <a href="mailto:yourmail@example.com" class="hover:underline">yourmail@example.com</a>
-        </li>
-        <li class="flex items-center space-x-2">
-          <i data-lucide="github" class="text-indigo-400"></i>
-          <a href="https://github.com/yourname" target="_blank" class="hover:underline">github.com/yourname</a>
-        </li>
-        <li class="flex items-center space-x-2">
-          <i data-lucide="linkedin" class="text-indigo-400"></i>
-          <a href="https://linkedin.com" target="_blank" class="hover:underline">LinkedIn</a>
-        </li>
-        <li class="flex items-center space-x-2">
-          <i data-lucide="twitter" class="text-indigo-400"></i>
-          <a href="https://twitter.com" target="_blank" class="hover:underline">Twitter</a>
+          <a href="mailto:kyou.shingi@gmail.com" class="hover:underline">kyou.shingi@gmail.com</a>
         </li>
       </ul>
     </section>
@@ -207,52 +187,12 @@
 
   <!-- JS 脚本 -->
   <script>
+    // 夜间模式
     function toggleDarkMode() { document.documentElement.classList.toggle('dark'); }
-    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
-
-    // 滚动高亮
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("#navLinks a");
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        if (scrollY >= sectionTop) current = section.getAttribute("id");
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active-link");
-        if (link.getAttribute("href") === "#" + current) link.classList.add("active-link");
-      });
-    });
-
-    // 多语言字典
-    let currentLang = "ja";
-    const i18n = {
-      ja: { nav_home:"ホーム", nav_about:"自己紹介", nav_works:"実績一覧", nav_me:"私について", nav_tools:"使用ツール", nav_portfolio:"作品展示", nav_contact:"お問い合わせ",
-            hero_btn_work:"作品を見る", hero_btn_contact:"お問い合わせ",
-            about_title:"1. 自己紹介", works_title:"2. 実績一覧", me_title:"3. 私について", tools_title:"4. 使用ツール", portfolio_title:"5. 作品展示", contact_title:"6. お問い合わせ" },
-      zh: { nav_home:"首页", nav_about:"自我介绍", nav_works:"实绩一览", nav_me:"关于我", nav_tools:"使用工具", nav_portfolio:"作品展示", nav_contact:"联系方式",
-            hero_btn_work:"查看作品", hero_btn_contact:"联系我",
-            about_title:"1. 自我介绍", works_title:"2. 实绩一览", me_title:"3. 关于我", tools_title:"4. 使用工具", portfolio_title:"5. 作品展示", contact_title:"6. 联系方式" },
-      en: { nav_home:"Home", nav_about:"About", nav_works:"Works", nav_me:"About Me", nav_tools:"Tools", nav_portfolio:"Portfolio", nav_contact:"Contact",
-            hero_btn_work:"View Portfolio", hero_btn_contact:"Contact Me",
-            about_title:"1. About Me", works_title:"2. Work Experience", me_title:"3. Myself", tools_title:"4. Tools", portfolio_title:"5. Portfolio", contact_title:"6. Contact" }
-    };
-
-    function toggleLanguage() {
-      const langs = ["ja", "zh", "en"];
-      let nextIndex = (langs.indexOf(currentLang) + 1) % langs.length;
-      currentLang = langs[nextIndex];
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        el.innerText = i18n[currentLang][key] || el.innerText;
-      });
-    }
 
     // 初始化图标
     lucide.createIcons();
   </script>
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
