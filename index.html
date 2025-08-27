@@ -8,13 +8,10 @@
   <script>
     tailwind.config = { darkMode: 'class' }
   </script>
-  <!-- AOS 动画库 -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Lucide 图标库 -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     html { scroll-behavior: smooth; }
-    .active-link { color: #6366f1; font-weight: bold; } /* indigo-500 */
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
@@ -29,9 +26,6 @@
         <a href="#portfolio" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-md shadow hover:bg-gray-100 transition">View Portfolio</a>
         <a href="#contact" class="px-8 py-3 border border-white font-semibold rounded-md hover:bg-white hover:text-indigo-700 transition">Contact</a>
       </div>
-    </div>
-    <div class="absolute bottom-10 text-white opacity-70">
-      <i data-lucide="chevron-down" class="w-8 h-8 animate-bounce"></i>
     </div>
   </section>
 
@@ -63,9 +57,20 @@
       </div>
     </section>
 
+    <!-- 実績一覧 -->
+    <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 実績一覧</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2021–2022 八紘電機株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2022–2023 CTW株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2023–現在 株式会社Yostar</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2014–2019 学生プロジェクト（デザイン・イベント企画）</div>
+      </div>
+    </section>
+
     <!-- 使用ツール -->
     <section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 使用ツール</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 使用ツール</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
         <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
           <i data-lucide="image" class="w-10 h-10 text-indigo-400"></i>
@@ -92,20 +97,16 @@
 
     <!-- 私について -->
     <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 私について</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 私について</h2>
       <div class="space-y-10">
-
         <!-- 猫 -->
         <div>
           <h3 class="font-semibold text-xl mb-3">猫</h3>
           <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
             <img src="cat.jpg" alt="My Cat" class="w-40 h-40 object-cover rounded-full shadow-lg">
-            <p class="text-gray-700 dark:text-gray-300">
-              ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。
-            </p>
+            <p class="text-gray-700 dark:text-gray-300">ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。</p>
           </div>
         </div>
-
         <!-- 旅行 -->
         <div>
           <h3 class="font-semibold text-xl mb-3">旅行</h3>
@@ -113,8 +114,7 @@
           <div class="mb-6">
             <iframe src="https://www.google.com/maps/d/embed?mid=1a5e0NGQMNqM9-WT6BTbWLAHpp5hIZ2o&ehbc=2E312F"
                     width="100%" height="400"
-                    class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600">
-            </iframe>
+                    class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600"></iframe>
           </div>
           <h4 class="font-semibold mb-2">日本国内</h4>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -142,7 +142,6 @@
             <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm hover:bg-purple-200">バリ島</span>
           </div>
         </div>
-
         <!-- ゲーム -->
         <div>
           <h3 class="font-semibold text-xl mb-3">ゲーム</h3>
@@ -150,20 +149,32 @@
       </div>
     </section>
 
-    <!-- 実績一覧 -->
-    <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 実績一覧</h2>
+    <!-- 作品展示 -->
+    <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 作品展示</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2021–2022 八紘電機株式会社</div>
-        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2022–2023 CTW株式会社</div>
-        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2023–現在 株式会社Yostar</div>
-        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2014–2019 学生プロジェクト（デザイン・イベント企画）</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">
+          <h3 class="font-semibold mb-2">企画プレゼン (PDF)</h3>
+          <iframe src="sample.pdf" class="w-full h-64 rounded-lg"></iframe>
+        </div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">
+          <h3 class="font-semibold mb-2">イベント企画書 (PPT)</h3>
+          <iframe src="sample2.pdf" class="w-full h-64 rounded-lg"></iframe>
+        </div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">
+          <h3 class="font-semibold mb-2">グラフィックデザイン (Image)</h3>
+          <img src="design1.jpg" alt="Graphic Design" class="w-full h-64 object-cover rounded-lg">
+        </div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">
+          <h3 class="font-semibold mb-2">その他作品 (External)</h3>
+          <a href="https://github.com/yourname" target="_blank" class="text-indigo-600 hover:underline">GitHub / Portfolio Link</a>
+        </div>
       </div>
     </section>
 
     <!-- お問い合わせ -->
     <section id="contact" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. お問い合わせ</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">6. お問い合わせ</h2>
       <ul class="space-y-3">
         <li class="flex items-center space-x-2">
           <i data-lucide="mail" class="text-indigo-400"></i>
