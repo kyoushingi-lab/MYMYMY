@@ -19,7 +19,6 @@
     .nav-bg { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
     .dark .nav-bg { background: rgba(17, 24, 39, 0.8); }
     #backToTop { display:none; }
-    /* Hero 动态渐变背景 */
     @keyframes gradientFlow {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
@@ -78,22 +77,118 @@
   <main class="mt-20 space-y-16 max-w-6xl mx-auto">
 
     <!-- 1. 自己紹介 -->
-    ...（省略：时间轴优化版）
+    <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
+      <div class="text-center mb-10">
+        <p class="text-2xl font-bold mb-2">YE XINXI</p>
+        <p class="text-lg mb-1">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+        <p class="text-md text-gray-600 dark:text-gray-400">ゲーム運営・PM・QA | グラフィックデザイナー | イベントプランナー</p>
+      </div>
+      <div class="relative border-l-4 border-indigo-500 ml-4 md:ml-6 space-y-8">
+        <div class="ml-4 relative">
+          <span class="absolute -left-6 md:-left-9 flex items-center justify-center w-6 h-6 md:w-8 md:h-8 bg-indigo-500 text-white rounded-full text-xs md:text-sm">
+            <i data-lucide="graduation-cap" class="w-3 h-3 md:w-4 md:h-4"></i>
+          </span>
+          <h3 class="font-semibold">学歴 <span class="ml-2 px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-full text-xs">2021</span></h3>
+          <p class="mt-1 text-sm md:text-base">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
+        </div>
+        <div class="ml-4 relative">
+          <span class="absolute -left-6 md:-left-9 flex items-center justify-center w-6 h-6 md:w-8 md:h-8 bg-indigo-500 text-white rounded-full text-xs md:text-sm">
+            <i data-lucide="briefcase" class="w-3 h-3 md:w-4 md:h-4"></i>
+          </span>
+          <h3 class="font-semibold">職歴</h3>
+          <p class="mt-1 text-sm md:text-base">2021 八紘電機株式会社 入社<br><span class="text-gray-600 dark:text-gray-400">営業／グラフィックデザイナー／イベントプランナー</span></p>
+          <p class="mt-4 text-sm md:text-base">2022 CTW株式会社 入社<br><span class="text-gray-600 dark:text-gray-400">ゲーム運営・PM・品質保証（QA）</span></p>
+          <p class="mt-4 text-sm md:text-base">2023 株式会社Yostar 入社（現職）<br><span class="text-gray-600 dark:text-gray-400">ゲーム運営・QA（テスト設計・検証／品質管理）</span></p>
+        </div>
+      </div>
+    </section>
 
     <!-- 2. 実績一覧 -->
-    ...（省略：卡片网格优化版）
+    <section id="works" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-6 md:p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 実績一覧</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2021–2022 八紘電機株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2022–2023 CTW株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2023–現在 株式会社Yostar</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2014–2019 学生プロジェクト（デザイン・イベント企画）</div>
+      </div>
+    </section>
 
     <!-- 3. 作品展示 -->
-    ...（带 hover + 弹窗详情）
+    <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 作品展示</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="portfolio-card p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg cursor-pointer bg-gray-50 dark:bg-gray-700"
+             data-title="Graphic Design"
+             data-desc="UI設計、バナー、ビジュアルデザインなどの制作例です。"
+             data-img="design1.jpg">
+          <img src="design1.jpg" alt="design work" class="w-full h-64 object-cover rounded-lg">
+          <h3 class="font-semibold mt-3">Graphic Design</h3>
+        </div>
+        <div class="portfolio-card p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg cursor-pointer bg-gray-50 dark:bg-gray-700"
+             data-title="企画プレゼン (PDF)"
+             data-desc="実際のゲーム運営プロジェクトで用いた企画書。"
+             data-img="sample.pdf">
+          <iframe src="sample.pdf" class="w-full h-64 rounded-lg"></iframe>
+          <h3 class="font-semibold mt-3">企画プレゼン</h3>
+        </div>
+      </div>
+    </section>
 
     <!-- 4. 使用ツール -->
-    ...（Icon + 描述）
+    <section id="tools" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="image" class="w-10 h-10" style="color:#31A8FF"></i><span>Photoshop</span><p class="text-xs text-gray-500">画像加工・UI</p></div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="star" class="w-10 h-10" style="color:#FF9A00"></i><span>Illustrator</span><p class="text-xs text-gray-500">ロゴ・印刷物</p></div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="file-text" class="w-10 h-10" style="color:#2B579A"></i><span>Word</span><p class="text-xs text-gray-500">文書作成</p></div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="presentation" class="w-10 h-10" style="color:#D24726"></i><span>PowerPoint</span><p class="text-xs text-gray-500">企画・発表</p></div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="table" class="w-10 h-10" style="color:#217346"></i><span>Excel</span><p class="text-xs text-gray-500">データ管理</p></div>
+      </div>
+    </section>
 
     <!-- 5. 私について -->
-    ...（猫 + 相册轮播 + 谷歌地图）
+    <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 私について</h2>
+      <div class="mb-10">
+        <h3 class="font-semibold text-xl mb-3">猫</h3>
+        <img src="cat.jpg" alt="My Cat" class="w-40 h-40 object-cover rounded-full shadow-lg transform transition hover:scale-105">
+        <p class="mt-3 text-gray-700 dark:text-gray-300">ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl mb-3">旅行</h3>
+        <div class="mb-6">
+          <div class="swiper w-full h-72 rounded-lg shadow-md">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="travel1.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+              <div class="swiper-slide"><img src="travel2.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+              <div class="swiper-slide"><img src="travel3.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="mb-6">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1a5e0NGQMNqM9-WT6BTbWLAHpp5hIZ2o&ehbc=2E312F"
+                  width="100%" height="400"
+                  class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600"></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- 6. お問い合わせ -->
-    ...（表单 + 邮箱）
+    <section id="contact" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">6. お問い合わせ</h2>
+      <form action="https://formspree.io/f/yourID" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="お名前" required class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
+        <input type="email" name="_replyto" placeholder="メールアドレス" required class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
+        <textarea name="message" placeholder="メッセージ" rows="5" required class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800"></textarea>
+        <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition">送信</button>
+      </form>
+    </section>
+
   </main>
 
   <!-- Portfolio 弹窗 -->
@@ -120,13 +215,10 @@
   <script>
     AOS.init();
 
-    // 深色模式
     document.getElementById("darkToggle").addEventListener("click",()=>{document.documentElement.classList.toggle("dark");});
-
-    // 汉堡菜单
     document.getElementById("menuToggle").addEventListener("click",()=>{document.getElementById("mobileMenu").classList.toggle("hidden");});
 
-    // 滚动高亮导航
+    // 滚动高亮
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
     window.addEventListener("scroll", () => {
@@ -165,14 +257,10 @@
     });
     closeModal.addEventListener("click",()=>{modal.classList.add("hidden");});
 
-    // Swiper
     new Swiper(".swiper",{loop:true,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
-
-    // 返回顶部
     const backToTop=document.getElementById("backToTop");
     window.addEventListener("scroll",()=>{backToTop.style.display=window.scrollY>300?"block":"none";});
     backToTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
   </script>
 </body>
 </html>
-
