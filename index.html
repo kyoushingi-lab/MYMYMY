@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MYMYMY - YE XINXI</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { darkMode: 'class' }</script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
@@ -30,6 +32,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
 
+  <!-- 🔝 Navigation -->
   <header class="fixed top-0 left-0 w-full z-50 nav-bg shadow-sm">
     <nav class="max-w-6xl mx-auto flex justify-between items-center py-3 px-6">
       <span class="font-bold text-indigo-600 dark:text-indigo-400">YE XINXI</span>
@@ -56,19 +59,81 @@
     </div>
   </header>
 
+  <!-- Hero -->
   <section id="hero" class="h-screen flex flex-col justify-center items-center text-center text-white animated-bg">
     <div class="max-w-2xl" data-aos="fade-up">
       <img src="cat.jpg" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
       <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">YE XINXI</h1>
-      <p class="text-lg md:text-2xl mb-2 opacity-90">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+      <p class="text-lg md:text-2xl mb-2 opacity-90">Game Operation / PM / QA / Graphic Designe / Event Planner</p>
       <p class="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">Creative & Functional Design for Games and Events</p>
     </div>
   </section>
 
   <main class="mt-20 space-y-16 max-w-6xl mx-auto">
-    <!-- 自己紹介 -->
-    <!-- 实绩一覧 -->
-    <!-- 作品展示 -->
+
+<!-- 1. 自己紹介 -->
+<section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-10 space-y-6" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
+  
+  <!-- 名前 -->
+  <p class="text-2xl font-bold tracking-wide">YE XINXI</p>
+  <p class="text-sm text-gray-500 dark:text-gray-400">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+
+  <!-- 自己PR -->
+  <div class="space-y-3 text-base leading-relaxed">
+    <p>
+      私はゲーム業界において、企画・開発・運営のプロジェクトマネジメントを中心に幅広い経験を積んでまいりました。
+      全体計画の策定、進捗管理、課題解決やリソース管理を通じて、プロジェクトを円滑に推進してきました。
+    </p>
+    <p>
+      また、開発チーム・デザインチーム・マーケティングチームなど多職種との連携を図り、
+      KPI 分析（課金率・リテンション率・ARPU・ARPPU）を基にした改善策の立案・実行や、
+      キャラクター実装順・イベント開催順の策定を通じ、収益最大化に直結する運営企画を実施してきました。
+    </p>
+    <p>
+      グラフィックデザインのスキルを活かし、イラストや写真素材を用いたビジュアル制作にも携わり、
+      ユーザーに訴求力のあるデザインを実現してきました。
+    </p>
+    <p>
+      学生時代には、ローカライズ業務のチームリーダーとして海外販売会社 JAST USA と直接コミュニケーションを取り、
+      Innocent Grey のゲーム『FLOWERS 四季』の中国語版ファンパッチを公式化し、最終的に Steam にてリリースされる成果を上げました。
+      この経験から、異文化間での調整能力やリーダーシップも培うことができました。
+    </p>
+    <p>
+      これらの経験を通じて、私は 「企画力・分析力・デザイン力・グローバル対応力」 を兼ね備えた人材として、
+      ゲーム開発・運営の現場で幅広く貢献できると考えております。
+    </p>
+  </div>
+
+  <!-- 学歴 -->
+  <h3 class="text-2xl font-bold mt-8 mb-4 border-b pb-1 border-gray-300 dark:border-gray-600">学歴</h3>
+  <div class="relative border-l-2 border-indigo-500 dark:border-indigo-400 pl-6 space-y-4">
+    <div>
+      <span class="text-sm text-gray-500">2021</span>
+      <p class="font-semibold">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
+    </div>
+  </div>
+
+  <!-- 職歴 -->
+  <h3 class="text-2xl font-bold mt-8 mb-4 border-b pb-1 border-gray-300 dark:border-gray-600">職歴</h3>
+  <div class="relative border-l-2 border-indigo-500 dark:border-indigo-400 pl-6 space-y-4">
+    <div>
+      <span class="text-sm text-gray-500">2021</span>
+      <p class="font-semibold">八紘電機株式会社 入社</p>
+    </div>
+    <div>
+      <span class="text-sm text-gray-500">2022</span>
+      <p class="font-semibold">CTW株式会社 入社</p>
+    </div>
+    <div>
+      <span class="text-sm text-gray-500">2023–現在</span>
+      <p class="font-semibold">株式会社Yostar 入社（現職）</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 3. 作品展示 -->
     <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 作品展示</h2>
       <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">PCゲーム《FLOWERS》ローカライズプロジェクト</h3>
@@ -96,7 +161,19 @@
       </div>
     </section>
 
-    <!-- 私について -->
+    <!-- 4. 使用ツール -->
+    <section id="tools" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div><i data-lucide="image" class="w-10 h-10" style="color:#31A8FF"></i><p>Photoshop</p></div>
+        <div><i data-lucide="star" class="w-10 h-10" style="color:#FF9A00"></i><p>Illustrator</p></div>
+        <div><i data-lucide="file-text" class="w-10 h-10" style="color:#2B579A"></i><p>Word</p></div>
+        <div><i data-lucide="presentation" class="w-10 h-10" style="color:#D24726"></i><p>PowerPoint</p></div>
+        <div><i data-lucide="table" class="w-10 h-10" style="color:#217346"></i><p>Excel</p></div>
+      </div>
+    </section>
+
+    <!-- 5. 私について -->
     <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 私について</h2>
       <div class="mb-10">
@@ -104,20 +181,27 @@
         <img src="cat.jpg" alt="My Cat" class="w-40 h-40 object-cover rounded-full shadow-lg">
         <p class="mt-3">ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。</p>
       </div>
-      <h3 class="font-semibold text-xl mb-3">旅行</h3>
-      <div class="swiper w-full h-72 rounded-lg shadow-md mb-6">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="travel1.jpg" class="w-full h-72 object-cover rounded-lg"></div>
-          <div class="swiper-slide"><img src="travel2.jpg" class="w-full h-72 object-cover rounded-lg"></div>
-          <div class="swiper-slide"><img src="travel3.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+      <div>
+        <h3 class="font-semibold text-xl mb-3">旅行</h3>
+        <div class="mb-6">
+          <div class="swiper w-full h-72 rounded-lg shadow-md">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="travel1.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+              <div class="swiper-slide"><img src="travel2.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+              <div class="swiper-slide"><img src="travel3.jpg" class="w-full h-72 object-cover rounded-lg"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1a5e0NGQMNqM9-WT6BTbWLAHpp5hIZ2o&ehbc=2E312F"
+                width="100%" height="400"
+                class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600"></iframe>
       </div>
     </section>
 
-    <!-- お問い合わせ -->
+    <!-- 6. お問い合わせ -->
     <section id="contact" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">6. お問い合わせ</h2>
       <div class="flex items-center space-x-3">
@@ -128,9 +212,11 @@
 
   </main>
 
+  <!-- Back to top -->
   <button id="backToTop" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition">↑</button>
-  <footer class="text-center py-6 mt-10 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-indigo-400">
-    Built with ❤️ by YE XINXI | © 2025
+
+  <footer class="text-center py-6 mt-10 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
+    Built with ❤️ by YE XINXI | © 2025 All Rights Reserved
   </footer>
 
   <script>lucide.createIcons();</script>
@@ -138,11 +224,15 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     AOS.init();
+    // Dark mode
     document.getElementById("darkToggle").addEventListener("click",()=>{document.documentElement.classList.toggle("dark");});
+    // Menu
     document.getElementById("menuToggle").addEventListener("click",()=>{document.getElementById("mobileMenu").classList.toggle("hidden");});
+    // Back to top
     const backToTop=document.getElementById("backToTop");
     window.addEventListener("scroll",()=>{backToTop.style.display=window.scrollY>300?"block":"none";});
     backToTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+    // Swiper
     new Swiper(".swiper",{loop:true,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
   </script>
 </body>
