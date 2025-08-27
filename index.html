@@ -14,14 +14,14 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     html { scroll-behavior: smooth; }
-    .active-link { color: #3b82f6; font-weight: bold; }
+    .active-link { color: #6366f1; font-weight: bold; } /* indigo-500 */
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
 
   <!-- 左侧导航栏 -->
   <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white flex flex-col items-center transition-colors duration-300 dark:bg-gray-800 hidden md:flex">
-    <div class="w-full h-32 bg-cover bg-center" style="background-image: url('https://picsum.photos/400/200');"></div>
+    <div class="w-full h-32 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700"></div>
     <div class="-mt-12 w-24 h-24 rounded-lg border-4 border-white overflow-hidden shadow-lg">
       <img src="https://picsum.photos/200" alt="profile" class="w-full h-full object-cover">
     </div>
@@ -38,10 +38,10 @@
       <a href="#portfolio" data-i18n="nav_portfolio">作品展示</a>
       <a href="#contact" data-i18n="nav_contact">お問い合わせ</a>
     </nav>
-    <button onclick="toggleDarkMode()" class="mt-6 flex items-center space-x-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white text-sm transition">
+    <button onclick="toggleDarkMode()" class="mt-6 flex items-center space-x-2 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white text-sm transition">
       <i data-lucide="moon"></i><span>Dark</span>
     </button>
-    <button onclick="toggleLanguage()" class="mt-4 flex items-center space-x-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white text-sm transition">
+    <button onclick="toggleLanguage()" class="mt-4 flex items-center space-x-2 px-4 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg text-white text-sm transition">
       <i data-lucide="globe"></i><span>Lang</span>
     </button>
   </div>
@@ -66,7 +66,7 @@
   </div>
 
   <!-- Hero 区 -->
-  <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-700 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
+  <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
     <div class="max-w-2xl" data-aos="fade-up">
       <img src="https://picsum.photos/200" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
       <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">YE XINXI</h1>
@@ -90,10 +90,10 @@
 
     <!-- 自己紹介 -->
     <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
         <span data-i18n="about_title">1. 自己紹介</span>
       </h2>
-      <div class="relative border-l-4 border-blue-500 ml-4">
+      <div class="relative border-l-4 border-indigo-500 ml-4">
         <div class="mb-8 ml-6">
           <div class="font-semibold">学歴</div>
           <p>2021年 京都芸術大学 プロダクトデザイン 大学院卒</p>
@@ -109,20 +109,20 @@
 
     <!-- 実績一覧 -->
     <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
         <span data-i18n="works_title">2. 実績一覧</span>
       </h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 border rounded-xl hover:shadow-md dark:border-gray-600">2021 八紘電機株式会社</div>
-        <div class="p-4 border rounded-xl hover:shadow-md dark:border-gray-600">2022 CTW株式会社</div>
-        <div class="p-4 border rounded-xl hover:shadow-md dark:border-gray-600">2023 株式会社Yostar</div>
-        <div class="p-4 border rounded-xl hover:shadow-md dark:border-gray-600">2024 …</div>
+        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2021 八紘電機株式会社</div>
+        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2022 CTW株式会社</div>
+        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2023 株式会社Yostar</div>
+        <div class="p-4 border rounded-xl hover:shadow-md border-indigo-200 dark:border-indigo-600">2024 …</div>
       </div>
     </section>
 
     <!-- 私について -->
     <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
         <span data-i18n="me_title">3. 私について</span>
       </h2>
       <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
@@ -132,46 +132,46 @@
       </ul>
     </section>
 
-   <!-- 使用ツール -->
-<section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-  <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
-    <span data-i18n="tools_title">4. 使用ツール</span>
-  </h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-    <div class="flex flex-col items-center space-y-2">
-      <i data-lucide="image" class="w-10 h-10 text-pink-400"></i>
-      <span>Photoshop</span>
-    </div>
-    <div class="flex flex-col items-center space-y-2">
-      <i data-lucide="star" class="w-10 h-10 text-pink-400"></i>
-      <span>Illustrator</span>
-    </div>
-    <div class="flex flex-col items-center space-y-2">
-      <i data-lucide="file-text" class="w-10 h-10 text-pink-400"></i>
-      <span>Word</span>
-    </div>
-    <div class="flex flex-col items-center space-y-2">
-      <i data-lucide="presentation" class="w-10 h-10 text-pink-400"></i>
-      <span>PowerPoint</span>
-    </div>
-    <div class="flex flex-col items-center space-y-2">
-      <i data-lucide="table" class="w-10 h-10 text-pink-400"></i>
-      <span>Excel</span>
-    </div>
-  </div>
-</section>
+    <!-- 使用ツール ICON -->
+    <section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
+        <span data-i18n="tools_title">4. 使用ツール</span>
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center space-y-2">
+          <i data-lucide="image" class="w-10 h-10 text-indigo-400"></i>
+          <span>Photoshop</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <i data-lucide="star" class="w-10 h-10 text-indigo-400"></i>
+          <span>Illustrator</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <i data-lucide="file-text" class="w-10 h-10 text-indigo-400"></i>
+          <span>Word</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <i data-lucide="presentation" class="w-10 h-10 text-indigo-400"></i>
+          <span>PowerPoint</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <i data-lucide="table" class="w-10 h-10 text-indigo-400"></i>
+          <span>Excel</span>
+        </div>
+      </div>
+    </section>
 
     <!-- 作品展示 -->
     <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
         <span data-i18n="portfolio_title">5. 作品展示</span>
       </h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 border rounded-xl dark:border-gray-600">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600">
           <h3 class="font-semibold mb-2">企画プレゼン</h3>
           <iframe src="sample.pdf" class="w-full h-64 rounded-lg"></iframe>
         </div>
-        <div class="p-4 border rounded-xl dark:border-gray-600">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600">
           <h3 class="font-semibold mb-2">レポート記事</h3>
           <iframe src="sample2.pdf" class="w-full h-64 rounded-lg"></iframe>
         </div>
@@ -180,24 +180,24 @@
 
     <!-- お問い合わせ -->
     <section id="contact" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">
         <span data-i18n="contact_title">6. お問い合わせ</span>
       </h2>
-      <ul class="space-y-2">
+      <ul class="space-y-3">
         <li class="flex items-center space-x-2">
-          <i data-lucide="mail"></i>
+          <i data-lucide="mail" class="text-indigo-400"></i>
           <a href="mailto:yourmail@example.com" class="hover:underline">yourmail@example.com</a>
         </li>
         <li class="flex items-center space-x-2">
-          <i data-lucide="github"></i>
+          <i data-lucide="github" class="text-indigo-400"></i>
           <a href="https://github.com/yourname" target="_blank" class="hover:underline">github.com/yourname</a>
         </li>
         <li class="flex items-center space-x-2">
-          <i data-lucide="linkedin"></i>
+          <i data-lucide="linkedin" class="text-indigo-400"></i>
           <a href="https://linkedin.com" target="_blank" class="hover:underline">LinkedIn</a>
         </li>
         <li class="flex items-center space-x-2">
-          <i data-lucide="twitter"></i>
+          <i data-lucide="twitter" class="text-indigo-400"></i>
           <a href="https://twitter.com" target="_blank" class="hover:underline">Twitter</a>
         </li>
       </ul>
