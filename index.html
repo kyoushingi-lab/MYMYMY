@@ -27,29 +27,39 @@
   <!-- 🔝 顶部导航 -->
   <header class="fixed top-0 left-0 w-full z-50 nav-bg shadow-sm">
     <nav class="max-w-6xl mx-auto flex justify-between items-center py-3 px-6">
+      <!-- Logo -->
       <span class="font-bold text-indigo-600 dark:text-indigo-400">YE XINXI</span>
+
       <!-- 桌面端菜单 -->
       <ul class="hidden md:flex space-x-6 text-sm font-medium">
-        <li><a href="#about" class="nav-link hover:text-indigo-500">自己紹介</a></li>
-        <li><a href="#works" class="nav-link hover:text-indigo-500">実績一覧</a></li>
-        <li><a href="#portfolio" class="nav-link hover:text-indigo-500">作品展示</a></li>
-        <li><a href="#tools" class="nav-link hover:text-indigo-500">使用ツール</a></li>
-        <li><a href="#me" class="nav-link hover:text-indigo-500">私について</a></li>
-        <li><a href="#contact" class="nav-link hover:text-indigo-500">お問い合わせ</a></li>
+        <li><a href="#about" class="hover:text-indigo-500">自己紹介</a></li>
+        <li><a href="#works" class="hover:text-indigo-500">実績一覧</a></li>
+        <li><a href="#portfolio" class="hover:text-indigo-500">作品展示</a></li>
+        <li><a href="#tools" class="hover:text-indigo-500">使用ツール</a></li>
+        <li><a href="#me" class="hover:text-indigo-500">私について</a></li>
+        <li><a href="#contact" class="hover:text-indigo-500">お問い合わせ</a></li>
       </ul>
+
       <div class="flex items-center space-x-4">
-        <button id="darkToggle"><i data-lucide="moon" class="w-6 h-6 text-gray-600 dark:text-gray-200"></i></button>
-        <button id="menuToggle" class="md:hidden"><i data-lucide="menu" class="w-6 h-6 text-gray-600 dark:text-gray-200"></i></button>
+        <!-- 深色模式按钮 -->
+        <button id="darkToggle">
+          <i data-lucide="moon" class="w-6 h-6 text-gray-600 dark:text-gray-200"></i>
+        </button>
+        <!-- 移动端汉堡按钮 -->
+        <button id="menuToggle" class="md:hidden">
+          <i data-lucide="menu" class="w-6 h-6 text-gray-600 dark:text-gray-200"></i>
+        </button>
       </div>
     </nav>
+
     <!-- 移动端菜单 -->
     <div id="mobileMenu" class="hidden md:hidden flex-col bg-white dark:bg-gray-800 shadow-md px-6 py-4 space-y-4 text-sm font-medium">
-      <a href="#about" class="nav-link block hover:text-indigo-500">自己紹介</a>
-      <a href="#works" class="nav-link block hover:text-indigo-500">実績一覧</a>
-      <a href="#portfolio" class="nav-link block hover:text-indigo-500">作品展示</a>
-      <a href="#tools" class="nav-link block hover:text-indigo-500">使用ツール</a>
-      <a href="#me" class="nav-link block hover:text-indigo-500">私について</a>
-      <a href="#contact" class="nav-link block hover:text-indigo-500">お問い合わせ</a>
+      <a href="#about" class="block hover:text-indigo-500">自己紹介</a>
+      <a href="#works" class="block hover:text-indigo-500">実績一覧</a>
+      <a href="#portfolio" class="block hover:text-indigo-500">作品展示</a>
+      <a href="#tools" class="block hover:text-indigo-500">使用ツール</a>
+      <a href="#me" class="block hover:text-indigo-500">私について</a>
+      <a href="#contact" class="block hover:text-indigo-500">お問い合わせ</a>
     </div>
   </header>
 
@@ -69,27 +79,64 @@
 
   <main class="mt-20 space-y-16 max-w-6xl mx-auto">
 
-    <!-- 1. 自己紹介（保持之前优化版） -->
-    <!-- 2. 実績一覧（保持之前优化版） -->
+    <!-- 1. 自己紹介（移动端优化） -->
+    <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
+      <div class="text-center mb-10">
+        <p class="text-2xl font-bold mb-2">YE XINXI</p>
+        <p class="text-lg mb-1">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+        <p class="text-md text-gray-600 dark:text-gray-400">ゲーム運営・PM・QA | グラフィックデザイナー | イベントプランナー</p>
+      </div>
+      <div class="relative border-l-4 border-indigo-500 ml-4 md:ml-6 space-y-8">
+        <div class="ml-4 relative">
+          <span class="absolute -left-6 md:-left-9 flex items-center justify-center w-6 h-6 md:w-8 md:h-8 bg-indigo-500 text-white rounded-full text-xs md:text-sm">
+            <i data-lucide="graduation-cap" class="w-3 h-3 md:w-4 md:h-4"></i>
+          </span>
+          <h3 class="font-semibold">学歴 <span class="ml-2 px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-full text-xs">2021</span></h3>
+          <p class="mt-1 text-sm md:text-base">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
+        </div>
+        <div class="ml-4 relative">
+          <span class="absolute -left-6 md:-left-9 flex items-center justify-center w-6 h-6 md:w-8 md:h-8 bg-indigo-500 text-white rounded-full text-xs md:text-sm">
+            <i data-lucide="briefcase" class="w-3 h-3 md:w-4 md:h-4"></i>
+          </span>
+          <h3 class="font-semibold">職歴</h3>
+          <p class="mt-1 text-sm md:text-base">2021 八紘電機株式会社 入社<br><span class="text-gray-600 dark:text-gray-400">営業／グラフィックデザイナー／イベントプランナー</span></p>
+          <p class="mt-4 text-sm md:text-base">2022 CTW株式会社 入社<br><span class="text-gray-600 dark:text-gray-400">ゲーム運営・PM・品質保証（QA）</span></p>
+          <p class="mt-4 text-sm md:text-base">2023 株式会社Yostar 入社（現職）<br><span class="text-gray-600 dark:text-gray-400">ゲーム運営・QA（テスト設計・検証／品質管理）</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 実績一覧（移动端 1列） -->
+    <section id="works" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-6 md:p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 実績一覧</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2021–2022 八紘電機株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2022–2023 CTW株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2023–現在 株式会社Yostar</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2014–2019 学生プロジェクト（デザイン・イベント企画）</div>
+      </div>
+    </section>
 
     <!-- 3. 作品展示 -->
     <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 作品展示</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <!-- 卡片 -->
-        <div class="portfolio-card p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg cursor-pointer bg-gray-50 dark:bg-gray-700"
-             data-title="Graphic Design"
-             data-desc="UI設計、バナー、ビジュアルデザインなどの制作例です。"
-             data-img="design1.jpg">
-          <img src="design1.jpg" alt="design work" class="w-full h-64 object-cover rounded-lg">
-          <h3 class="font-semibold mt-3">Graphic Design</h3>
-        </div>
-        <div class="portfolio-card p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg cursor-pointer bg-gray-50 dark:bg-gray-700"
-             data-title="企画プレゼン (PDF)"
-             data-desc="実際のゲーム運営プロジェクトで用いた企画書。"
-             data-img="sample.pdf">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg transform transition hover:scale-105">
+          <h3 class="font-semibold mb-2">企画プレゼン (PDF)</h3>
           <iframe src="sample.pdf" class="w-full h-64 rounded-lg"></iframe>
-          <h3 class="font-semibold mt-3">企画プレゼン</h3>
+        </div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg transform transition hover:scale-105">
+          <h3 class="font-semibold mb-2">イベント企画書 (PPT)</h3>
+          <iframe src="sample2.pdf" class="w-full h-64 rounded-lg"></iframe>
+        </div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg transform transition hover:scale-105">
+          <h3 class="font-semibold mb-2">グラフィックデザイン (Image)</h3>
+          <img src="design1.jpg" alt="Graphic Design" class="w-full h-64 object-cover rounded-lg">
+        </div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-lg transform transition hover:scale-105">
+          <h3 class="font-semibold mb-2">その他作品 (External)</h3>
+          <a href="https://github.com/yourname" target="_blank" class="text-indigo-600 hover:underline">GitHub / Portfolio Link</a>
         </div>
       </div>
     </section>
@@ -98,37 +145,67 @@
     <section id="tools" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="image" class="w-10 h-10" style="color:#31A8FF"></i><span>Photoshop</span><p class="text-xs text-gray-500">画像加工・UI</p></div>
-        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="star" class="w-10 h-10" style="color:#FF9A00"></i><span>Illustrator</span><p class="text-xs text-gray-500">ロゴ・印刷物</p></div>
-        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="file-text" class="w-10 h-10" style="color:#2B579A"></i><span>Word</span><p class="text-xs text-gray-500">文書作成</p></div>
-        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="presentation" class="w-10 h-10" style="color:#D24726"></i><span>PowerPoint</span><p class="text-xs text-gray-500">企画・発表</p></div>
-        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110"><i data-lucide="table" class="w-10 h-10" style="color:#217346"></i><span>Excel</span><p class="text-xs text-gray-500">データ管理</p></div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="image" class="w-10 h-10 text-indigo-400"></i><span>Photoshop</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="star" class="w-10 h-10 text-indigo-400"></i><span>Illustrator</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="file-text" class="w-10 h-10 text-indigo-400"></i><span>Word</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="presentation" class="w-10 h-10 text-indigo-400"></i><span>PowerPoint</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="table" class="w-10 h-10 text-indigo-400"></i><span>Excel</span>
+        </div>
       </div>
     </section>
 
-    <!-- 5. 私について（保持：猫+相册+地图） -->
+    <!-- 5. 私について -->
+    <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 私について</h2>
+      <div class="space-y-10">
+        <!-- 猫 -->
+        <div>
+          <h3 class="font-semibold text-xl mb-3">猫</h3>
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+            <img src="cat.jpg" alt="My Cat" class="w-40 h-40 object-cover rounded-full shadow-lg">
+            <p class="text-gray-700 dark:text-gray-300">ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。</p>
+          </div>
+        </div>
+        <!-- 旅行 -->
+        <div>
+          <h3 class="font-semibold text-xl mb-3">旅行</h3>
+          <p class="mb-4">これまでに訪れた場所：</p>
+          <div class="mb-6">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1a5e0NGQMNqM9-WT6BTbWLAHpp5hIZ2o&ehbc=2E312F" width="100%" height="400" class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- 6. お問い合わせ（带表单） -->
+    <!-- 6. お問い合わせ -->
     <section id="contact" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">6. お問い合わせ</h2>
-      <form action="https://formspree.io/f/yourID" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="お名前" required class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
-        <input type="email" name="_replyto" placeholder="メールアドレス" required class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
-        <textarea name="message" placeholder="メッセージ" rows="5" required class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-800"></textarea>
-        <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition">送信</button>
-      </form>
+      <ul class="space-y-3">
+        <li class="flex items-center space-x-2"><i data-lucide="mail" class="text-indigo-400"></i><a href="mailto:kyou.shingi@gmail.com" class="hover:underline">kyou.shingi@gmail.com</a></li>
+        <li class="flex items-center space-x-2"><i data-lucide="linkedin" class="text-indigo-400"></i><a href="#" class="hover:underline">LinkedIn</a></li>
+        <li class="flex items-center space-x-2"><i data-lucide="github" class="text-indigo-400"></i><a href="https://github.com/yourname" target="_blank" class="hover:underline">GitHub</a></li>
+      </ul>
     </section>
+  </main>
+
+    <!-- 3. 作品展示 / 4. 使用ツール / 5. 私について（含相册+地图） / 6. お問い合わせ -->
+    <!-- 保持和上版一致，这里省略 -->
 
   </main>
 
-  <!-- Portfolio 弹窗 -->
-  <div id="portfolioModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-lg w-full relative">
-      <button id="closeModal" class="absolute top-3 right-3 text-2xl">&times;</button>
-      <h3 id="modalTitle" class="text-xl font-bold mb-3"></h3>
-      <p id="modalDesc" class="text-gray-600 dark:text-gray-300 mb-4"></p>
-      <div id="modalContent"></div>
-    </div>
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+    <img id="lightbox-img" src="" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
   </div>
 
   <!-- 返回顶部 -->
@@ -145,54 +222,21 @@
   <script>
     AOS.init();
 
-    // 深色模式
+    // 深色模式切换
     document.getElementById("darkToggle").addEventListener("click",()=>{document.documentElement.classList.toggle("dark");});
 
-    // 汉堡菜单
-    document.getElementById("menuToggle").addEventListener("click",()=>{document.getElementById("mobileMenu").classList.toggle("hidden");});
+    // 汉堡菜单切换
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuToggle.addEventListener("click",()=>{mobileMenu.classList.toggle("hidden");});
 
-    // 滚动高亮导航
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(sec=>{
-        const top=sec.offsetTop-120;
-        const height=sec.clientHeight;
-        if(scrollY>=top && scrollY<top+height){current=sec.getAttribute("id");}
-      });
-      navLinks.forEach(link=>{
-        link.classList.remove("text-indigo-600","dark:text-indigo-400","font-bold");
-        if(link.getAttribute("href")==="#"+current){
-          link.classList.add("text-indigo-600","dark:text-indigo-400","font-bold");
-        }
-      });
-    });
-
-    // Portfolio 弹窗
-    const modal=document.getElementById("portfolioModal");
-    const closeModal=document.getElementById("closeModal");
-    const modalTitle=document.getElementById("modalTitle");
-    const modalDesc=document.getElementById("modalDesc");
-    const modalContent=document.getElementById("modalContent");
-    document.querySelectorAll(".portfolio-card").forEach(card=>{
-      card.addEventListener("click",()=>{
-        modalTitle.textContent=card.dataset.title;
-        modalDesc.textContent=card.dataset.desc;
-        if(card.dataset.img.endsWith(".pdf")){
-          modalContent.innerHTML=`<iframe src="${card.dataset.img}" class="w-full h-64 rounded-lg"></iframe>`;
-        } else {
-          modalContent.innerHTML=`<img src="${card.dataset.img}" class="w-full h-64 object-cover rounded-lg">`;
-        }
-        modal.classList.remove("hidden");
-        modal.classList.add("flex");
-      });
-    });
-    closeModal.addEventListener("click",()=>{modal.classList.add("hidden");});
+    // Lightbox
+    function openLightbox(src){document.getElementById("lightbox").classList.remove("hidden");document.getElementById("lightbox-img").src=src;}
+    function closeLightbox(){document.getElementById("lightbox").classList.add("hidden");}
 
     // Swiper
     new Swiper(".swiper",{loop:true,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
-
+    
     // 返回顶部
     const backToTop=document.getElementById("backToTop");
     window.addEventListener("scroll",()=>{backToTop.style.display=window.scrollY>300?"block":"none";});
