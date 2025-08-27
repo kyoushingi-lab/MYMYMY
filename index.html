@@ -6,9 +6,7 @@
   <title>Portfolio - YE XINXI</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
+    tailwind.config = { darkMode: 'class' }
   </script>
   <!-- AOS 动画库 -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -30,14 +28,16 @@
       <p class="text-sm text-gray-300 dark:text-gray-400">Graphic Designer / Event Planner</p>
     </div>
     <nav id="navLinks" class="flex flex-col space-y-6 text-lg mt-10">
-      <a href="#about">自己紹介</a>
-      <a href="#works">実績一覧</a>
-      <a href="#me">私について</a>
-      <a href="#tools">使用ツール</a>
-      <a href="#portfolio">作品展示</a>
-      <a href="#contact">お問い合わせ</a>
+      <a href="#hero" data-i18n="nav_home">ホーム</a>
+      <a href="#about" data-i18n="nav_about">自己紹介</a>
+      <a href="#works" data-i18n="nav_works">実績一覧</a>
+      <a href="#me" data-i18n="nav_me">私について</a>
+      <a href="#tools" data-i18n="nav_tools">使用ツール</a>
+      <a href="#portfolio" data-i18n="nav_portfolio">作品展示</a>
+      <a href="#contact" data-i18n="nav_contact">お問い合わせ</a>
     </nav>
-    <button onclick="toggleDarkMode()" class="mt-10 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white text-sm transition">🌙 / ☀️</button>
+    <button onclick="toggleDarkMode()" class="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white text-sm transition">🌙 / ☀️</button>
+    <button onclick="toggleLanguage()" class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-white text-sm transition">🌐</button>
   </div>
 
   <!-- 手机端顶部导航 -->
@@ -45,24 +45,48 @@
     <span class="font-bold">YE XINXI</span>
     <div class="flex items-center space-x-4">
       <button onclick="toggleDarkMode()" class="text-xl">🌙</button>
+      <button onclick="toggleLanguage()" class="text-xl">🌐</button>
       <button onclick="toggleMenu()" class="text-xl">☰</button>
     </div>
   </div>
   <div id="mobileMenu" class="hidden fixed top-14 left-0 w-full bg-gray-900 text-white flex-col items-center py-4 space-y-4 dark:bg-gray-800 z-40 md:hidden">
-    <a href="#about" onclick="toggleMenu()">自己紹介</a>
-    <a href="#works" onclick="toggleMenu()">実績一覧</a>
-    <a href="#me" onclick="toggleMenu()">私について</a>
-    <a href="#tools" onclick="toggleMenu()">使用ツール</a>
-    <a href="#portfolio" onclick="toggleMenu()">作品展示</a>
-    <a href="#contact" onclick="toggleMenu()">お問い合わせ</a>
+    <a href="#hero" onclick="toggleMenu()" data-i18n="nav_home">ホーム</a>
+    <a href="#about" onclick="toggleMenu()" data-i18n="nav_about">自己紹介</a>
+    <a href="#works" onclick="toggleMenu()" data-i18n="nav_works">実績一覧</a>
+    <a href="#me" onclick="toggleMenu()" data-i18n="nav_me">私について</a>
+    <a href="#tools" onclick="toggleMenu()" data-i18n="nav_tools">使用ツール</a>
+    <a href="#portfolio" onclick="toggleMenu()" data-i18n="nav_portfolio">作品展示</a>
+    <a href="#contact" onclick="toggleMenu()" data-i18n="nav_contact">お問い合わせ</a>
   </div>
+
+  <!-- Hero 区 -->
+  <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
+    <div class="max-w-2xl" data-aos="fade-up">
+      <img src="https://picsum.photos/200" alt="profile" class="w-32 h-32 rounded-full border-4 border-white mx-auto mb-6 shadow-lg">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">YE XINXI</h1>
+      <p class="text-lg md:text-xl mb-6">Graphic Designer ・ Event Planner</p>
+      <div class="space-x-4">
+        <a href="#portfolio" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
+          <span data-i18n="hero_btn_work">作品を見る</span>
+        </a>
+        <a href="#contact" class="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-indigo-600 transition">
+          <span data-i18n="hero_btn_contact">お問い合わせ</span>
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-10 animate-bounce">
+      <a href="#about">⬇️</a>
+    </div>
+  </section>
 
   <!-- 主体内容 -->
   <main class="ml-0 md:ml-64 p-6 md:p-10 space-y-16 mt-14 md:mt-0">
 
-    <!-- 自己紹介 时间轴 -->
+    <!-- 自己紹介 -->
     <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">1. 自己紹介</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+        <span data-i18n="about_title">1. 自己紹介</span>
+      </h2>
       <div class="relative border-l-4 border-blue-500 ml-4">
         <div class="mb-8 ml-6">
           <div class="font-semibold">🎓 学歴</div>
@@ -79,7 +103,9 @@
 
     <!-- 実績一覧 -->
     <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">2. 実績一覧</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+        <span data-i18n="works_title">2. 実績一覧</span>
+      </h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="p-4 border rounded-xl hover:shadow-md dark:border-gray-600">2021 八紘電機株式会社</div>
         <div class="p-4 border rounded-xl hover:shadow-md dark:border-gray-600">2022 CTW株式会社</div>
@@ -90,7 +116,9 @@
 
     <!-- 私について -->
     <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">3. 私について</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+        <span data-i18n="me_title">3. 私について</span>
+      </h2>
       <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
         <li>SNS</li>
         <li>翻訳</li>
@@ -98,40 +126,24 @@
       </ul>
     </section>
 
-    <!-- 使用ツール 技能进度条 -->
+    <!-- 使用ツール -->
     <section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">4. 使用ツール</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+        <span data-i18n="tools_title">4. 使用ツール</span>
+      </h2>
       <div class="space-y-4">
-        <div>
-          <p>Photoshop</p>
-          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
-            <div class="bg-blue-500 h-3 rounded-full" style="width: 85%"></div>
-          </div>
-        </div>
-        <div>
-          <p>Illustrator</p>
-          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
-            <div class="bg-blue-500 h-3 rounded-full" style="width: 75%"></div>
-          </div>
-        </div>
-        <div>
-          <p>Figma</p>
-          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
-            <div class="bg-blue-500 h-3 rounded-full" style="width: 70%"></div>
-          </div>
-        </div>
-        <div>
-          <p>PowerPoint</p>
-          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
-            <div class="bg-blue-500 h-3 rounded-full" style="width: 90%"></div>
-          </div>
-        </div>
+        <div><p>Photoshop</p><div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 85%"></div></div></div>
+        <div><p>Illustrator</p><div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 75%"></div></div></div>
+        <div><p>Figma</p><div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 70%"></div></div></div>
+        <div><p>PowerPoint</p><div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width: 90%"></div></div></div>
       </div>
     </section>
 
-    <!-- 作品展示 PPT/PDF 预览 -->
+    <!-- 作品展示 -->
     <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">5. 作品展示</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+        <span data-i18n="portfolio_title">5. 作品展示</span>
+      </h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="p-4 border rounded-xl dark:border-gray-600">
           <h3 class="font-semibold mb-2">企画プレゼン</h3>
@@ -146,7 +158,9 @@
 
     <!-- お問い合わせ -->
     <section id="contact" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">6. お問い合わせ</h2>
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 dark:border-gray-600">
+        <span data-i18n="contact_title">6. お問い合わせ</span>
+      </h2>
       <p class="mb-4">📩 ご連絡は以下の方法でお願いします：</p>
       <ul class="space-y-2">
         <li>Email: <a href="mailto:yourmail@example.com" class="text-blue-500 hover:underline">yourmail@example.com</a></li>
@@ -164,12 +178,10 @@
 
   <!-- JS 脚本 -->
   <script>
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-    }
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('hidden');
-    }
+    function toggleDarkMode() { document.documentElement.classList.toggle('dark'); }
+    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
+
+    // 滚动时导航高亮
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("#navLinks a");
     window.addEventListener("scroll", () => {
@@ -183,9 +195,39 @@
         if (link.getAttribute("href") === "#" + current) link.classList.add("active-link");
       });
     });
+
+    // 多语言字典
+    let currentLang = "ja";
+    const i18n = {
+      ja: {
+        nav_home: "ホーム", nav_about: "自己紹介", nav_works: "実績一覧", nav_me: "私について", nav_tools: "使用ツール", nav_portfolio: "作品展示", nav_contact: "お問い合わせ",
+        hero_btn_work: "作品を見る", hero_btn_contact: "お問い合わせ",
+        about_title: "1. 自己紹介", works_title: "2. 実績一覧", me_title: "3. 私について", tools_title: "4. 使用ツール", portfolio_title: "5. 作品展示", contact_title: "6. お問い合わせ"
+      },
+      zh: {
+        nav_home: "首页", nav_about: "自我介绍", nav_works: "实绩一览", nav_me: "关于我", nav_tools: "使用工具", nav_portfolio: "作品展示", nav_contact: "联系方式",
+        hero_btn_work: "查看作品", hero_btn_contact: "联系我",
+        about_title: "1. 自我介绍", works_title: "2. 实绩一览", me_title: "3. 关于我", tools_title: "4. 使用工具", portfolio_title: "5. 作品展示", contact_title: "6. 联系方式"
+      },
+      en: {
+        nav_home: "Home", nav_about: "About", nav_works: "Works", nav_me: "About Me", nav_tools: "Tools", nav_portfolio: "Portfolio", nav_contact: "Contact",
+        hero_btn_work: "View Portfolio", hero_btn_contact: "Contact Me",
+        about_title: "1. About Me", works_title: "2. Work Experience", me_title: "3. Myself", tools_title: "4. Tools", portfolio_title: "5. Portfolio", contact_title: "6. Contact"
+      }
+    };
+
+    function toggleLanguage() {
+      const langs = ["ja", "zh", "en"];
+      let nextIndex = (langs.indexOf(currentLang) + 1) % langs.length;
+      currentLang = langs[nextIndex];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        el.innerText = i18n[currentLang][key] || el.innerText;
+      });
+    }
   </script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
-
 </body>
 </html>
