@@ -19,19 +19,15 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
 
-  <!-- Hero 区 -->
+  <!-- Hero -->
   <section id="hero" class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 text-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
     <div class="max-w-2xl" data-aos="fade-up">
       <img src="https://picsum.photos/200" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
       <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">YE XINXI</h1>
       <p class="text-lg md:text-2xl mb-8 opacity-90">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
       <div class="space-x-6">
-        <a href="#portfolio" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-md shadow hover:bg-gray-100 transition">
-          <span data-i18n="hero_btn_work">View Portfolio</span>
-        </a>
-        <a href="#contact" class="px-8 py-3 border border-white font-semibold rounded-md hover:bg-white hover:text-indigo-700 transition">
-          <span data-i18n="hero_btn_contact">Contact</span>
-        </a>
+        <a href="#portfolio" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-md shadow hover:bg-gray-100 transition">View Portfolio</a>
+        <a href="#contact" class="px-8 py-3 border border-white font-semibold rounded-md hover:bg-white hover:text-indigo-700 transition">Contact</a>
       </div>
     </div>
     <div class="absolute bottom-10 text-white opacity-70">
@@ -39,46 +35,57 @@
     </div>
   </section>
 
-  <!-- 主体内容 -->
-  <main class="p-6 md:p-10 space-y-16 mt-14 md:mt-0 max-w-4xl mx-auto">
+  <main class="p-6 md:p-10 space-y-16 mt-14 md:mt-0 max-w-5xl mx-auto">
 
     <!-- 自己紹介 -->
     <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
-      <p class="font-bold mb-2">YE XINXI</p>
-      <p class="mb-1">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
-      <p class="mb-6">ゲーム運営・PM・QA | グラフィックデザイナー | イベントプランナー</p>
+      <h2 class="text-3xl font-bold mb-8 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
+      <div class="text-center mb-10">
+        <p class="text-2xl font-bold mb-2">YE XINXI</p>
+        <p class="text-lg mb-1">Game Operation / PM / QA | Graphic Designer | Event Planner</p>
+        <p class="text-md text-gray-600 dark:text-gray-400">ゲーム運営・PM・QA | グラフィックデザイナー | イベントプランナー</p>
+      </div>
 
-      <div class="relative border-l-4 border-indigo-500 ml-4">
-        <div class="mb-8 ml-6">
-          <div class="font-semibold">学歴</div>
-          <p>2021年　京都芸術大学 大学院 プロダクトデザイン専攻　修了</p>
+      <!-- Timeline -->
+      <div class="relative border-l-4 border-indigo-500 ml-6 space-y-8">
+        <div class="ml-6 relative">
+          <span class="absolute -left-9 flex items-center justify-center w-8 h-8 bg-indigo-500 text-white rounded-full"><i data-lucide="graduation-cap" class="w-4 h-4"></i></span>
+          <h3 class="font-semibold">学歴 <span class="ml-2 px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-full text-xs">2021</span></h3>
+          <p class="mt-2">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
         </div>
-        <div class="ml-6">
-          <div class="font-semibold">職歴</div>
-          <p>2021年　八紘電機株式会社　入社<br>営業／グラフィックデザイナー／イベントプランナー</p>
-          <p class="mt-2">2022年　CTW株式会社　入社<br>ゲーム運営・プロジェクトマネジメント（PM）・品質保証（QA）</p>
-          <p class="mt-2">2023年　株式会社Yostar　入社（現職）<br>ゲーム運営・QA（テスト設計・検証／品質管理）</p>
+        <div class="ml-6 relative">
+          <span class="absolute -left-9 flex items-center justify-center w-8 h-8 bg-indigo-500 text-white rounded-full"><i data-lucide="briefcase" class="w-4 h-4"></i></span>
+          <h3 class="font-semibold">職歴</h3>
+          <p class="mt-2">2021 八紘電機株式会社 入社<br><span class="text-sm text-gray-600 dark:text-gray-400">営業／グラフィックデザイナー／イベントプランナー</span></p>
+          <p class="mt-4">2022 CTW株式会社 入社<br><span class="text-sm text-gray-600 dark:text-gray-400">ゲーム運営・PM・品質保証（QA）</span></p>
+          <p class="mt-4">2023 株式会社Yostar 入社（現職）<br><span class="text-sm text-gray-600 dark:text-gray-400">ゲーム運営・QA（テスト設計・検証／品質管理）</span></p>
         </div>
       </div>
     </section>
 
-    <!-- 実績一覧 -->
-    <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 実績一覧</h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="font-semibold mb-2">［職歴］</h3>
-          <ul class="list-disc ml-6">
-            <li>2021–2022　八紘電機株式会社</li>
-            <li>2022–2023　CTW株式会社</li>
-            <li>2023–現在　株式会社Yostar</li>
-          </ul>
+    <!-- 使用ツール -->
+    <section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">2. 使用ツール</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="image" class="w-10 h-10 text-indigo-400"></i>
+          <span>Photoshop</span>
         </div>
-        <div>
-          <h3 class="font-semibold mb-2">［学生時代］</h3>
-          <p>2014–2019　大学在学中のプロジェクト実績<br>
-             （デザイン制作・イベント企画など、個人活動およびチーム活動として参画）</p>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="star" class="w-10 h-10 text-indigo-400"></i>
+          <span>Illustrator</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="file-text" class="w-10 h-10 text-indigo-400"></i>
+          <span>Word</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="presentation" class="w-10 h-10 text-indigo-400"></i>
+          <span>PowerPoint</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 transform transition hover:scale-110">
+          <i data-lucide="table" class="w-10 h-10 text-indigo-400"></i>
+          <span>Excel</span>
         </div>
       </div>
     </section>
@@ -86,10 +93,9 @@
     <!-- 私について -->
     <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
       <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 私について</h2>
-
       <div class="space-y-10">
 
-        <!-- 🐱 猫 -->
+        <!-- 猫 -->
         <div>
           <h3 class="font-semibold text-xl mb-3">猫</h3>
           <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
@@ -98,77 +104,60 @@
               ゴールデンブリティッシュショートヘアーを飼っています。毎日一緒に暮らし、癒しと活力をもらっています。
             </p>
           </div>
+        </div>
 
-<!-- ✈️ 旅行 -->
-<div>
-  <h3 class="font-semibold text-xl mb-3">旅行</h3>
-  <p class="mb-4">これまでに訪れた場所：</p>
+        <!-- 旅行 -->
+        <div>
+          <h3 class="font-semibold text-xl mb-3">旅行</h3>
+          <p class="mb-4">これまでに訪れた場所：</p>
+          <div class="mb-6">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1a5e0NGQMNqM9-WT6BTbWLAHpp5hIZ2o&ehbc=2E312F"
+                    width="100%" height="400"
+                    class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600">
+            </iframe>
+          </div>
+          <h4 class="font-semibold mb-2">日本国内</h4>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">東京</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">京都</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">大阪</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">名古屋</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">沖縄</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">北海道</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">石垣島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">宮古島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">滋賀</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">和歌山</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">奈良</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">熊本</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">小豆島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">三重</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">屋久島</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm hover:bg-indigo-200">福岡</span>
+          </div>
+          <h4 class="font-semibold mb-2">海外</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm hover:bg-purple-200">韓国</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm hover:bg-purple-200">台湾</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm hover:bg-purple-200">バリ島</span>
+          </div>
+        </div>
 
-  <!-- Google My Maps 可视化地图 -->
-  <div class="mb-6">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1a5e0NGQMNqM9-WT6BTbWLAHpp5hIZ2o&ehbc=2E312F"
-  </div>
-
-  <!-- 城市标签 -->
-  <div class="flex flex-wrap gap-2">
-<!-- 城市标签 -->
-<div class="flex flex-wrap gap-2">
-  <!-- 日本国内 -->
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">東京</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">京都</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">大阪</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">名古屋</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">沖縄</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">北海道</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">石垣島</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">宮古島</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">滋賀</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">和歌山</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">奈良</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">熊本</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">小豆島</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">三重</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">屋久島</span>
-  <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">福岡</span>
-
-  <!-- 海外 -->
-  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">韓国</span>
-  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">台湾</span>
-  <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">バリ島</span>
-</div>
-
-        <!-- 🎮 游戏 -->
+        <!-- ゲーム -->
         <div>
           <h3 class="font-semibold text-xl mb-3">ゲーム</h3>
         </div>
-
       </div>
     </section>
 
-    <!-- 使用ツール -->
-    <section id="tools" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-        <div class="flex flex-col items-center space-y-2">
-          <i data-lucide="image" class="w-10 h-10 text-indigo-400"></i>
-          <span>Photoshop</span>
-        </div>
-        <div class="flex flex-col items-center space-y-2">
-          <i data-lucide="star" class="w-10 h-10 text-indigo-400"></i>
-          <span>Illustrator</span>
-        </div>
-        <div class="flex flex-col items-center space-y-2">
-          <i data-lucide="file-text" class="w-10 h-10 text-indigo-400"></i>
-          <span>Word</span>
-        </div>
-        <div class="flex flex-col items-center space-y-2">
-          <i data-lucide="presentation" class="w-10 h-10 text-indigo-400"></i>
-          <span>PowerPoint</span>
-        </div>
-        <div class="flex flex-col items-center space-y-2">
-          <i data-lucide="table" class="w-10 h-10 text-indigo-400"></i>
-          <span>Excel</span>
-        </div>
+    <!-- 実績一覧 -->
+    <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 実績一覧</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2021–2022 八紘電機株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2022–2023 CTW株式会社</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2023–現在 株式会社Yostar</div>
+        <div class="p-4 border rounded-xl border-indigo-200 dark:border-indigo-600 hover:shadow-md">2014–2019 学生プロジェクト（デザイン・イベント企画）</div>
       </div>
     </section>
 
@@ -182,15 +171,14 @@
         </li>
       </ul>
     </section>
-
   </main>
 
-  <!-- JS 脚本 -->
-  <script>
-    // 夜间模式
-    function toggleDarkMode() { document.documentElement.classList.toggle('dark'); }
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-10 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
+    © 2025 YE XINXI. All Rights Reserved.
+  </footer>
 
-    // 初始化图标
+  <script>
     lucide.createIcons();
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
