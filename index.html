@@ -28,9 +28,6 @@
       background-size: 400% 400%;
       animation: gradientFlow 15s ease infinite;
     }
-    :target {
-      scroll-margin-top: 100px; /* 🔹 避免导航栏遮挡 */
-    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
@@ -76,7 +73,74 @@
 
 <!-- 自己紹介 -->
 <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-10" data-aos="fade-up">
-  ...
+  <h2 class="text-3xl font-bold mb-10 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">1. 自己紹介</h2>
+
+  <!-- 🔹 左右分栏 -->
+  <div class="grid md:grid-cols-3 gap-10 items-start">
+
+    <!-- 左侧：基本信息 -->
+    <div class="md:col-span-1 text-center space-y-4">
+      <img src="images/MYMYMY.jpg" alt="KYOU" class="w-40 h-40 rounded-full mx-auto shadow-lg object-cover border-4 border-indigo-200 dark:border-indigo-600">
+      <p class="text-2xl font-bold tracking-wide">KYOU</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">Game Operation / PM / QA</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">Graphic Designer / Event Planner</p>
+    </div>
+
+<!-- 右侧：PR文 -->
+    <div class="md:col-span-2 space-y-4 text-base leading-relaxed">
+      <p>
+        私はゲーム業界において、企画・開発・運営のプロジェクトマネジメントを中心に幅広い経験を積んでまいりました。
+        全体計画の策定、進捗管理、課題解決やリソース管理を通じて、プロジェクトを円滑に推進してきました。
+      </p>
+      <p>
+        また、開発チーム・デザインチーム・マーケティングチームなど多職種との連携を図り、
+        KPI 分析（課金率・リテンション率・ARPU・ARPPU）を基にした改善策の立案・実行や、
+        キャラクター実装順・イベント開催順の策定を通じ、収益最大化に直結する運営企画を実施してきました。
+      </p>
+      <p>
+        グラフィックデザインのスキルを活かし、イラストや写真素材を用いたビジュアル制作にも携わり、
+        ユーザーに訴求力のあるデザインを実現してきました。
+      </p>
+      <p>
+        学生時代には、ローカライズ業務のチームリーダーとして海外販売会社 JAST USA と直接コミュニケーションを取り、
+        Innocent Grey のゲーム『FLOWERS 四季』の中国語版ファンパッチを公式化し、最終的に Steam にてリリースされる成果を上げました。
+        この経験から、異文化間での調整能力やリーダーシップも培うことができました。
+      </p>
+      <p>
+        これらの経験を通じて、私は 「企画力・分析力・デザイン力・グローバル対応力」 を兼ね備えた人材として、
+        ゲーム開発・運営の現場で幅広く貢献できると考えております。
+      </p>
+    </div>
+  </div>
+
+  <!-- 🔹 分隔线 -->
+  <hr class="my-10 border-gray-300 dark:border-gray-600">
+
+  <!-- 学歴 -->
+  <h3 class="text-2xl font-bold mb-6 border-b pb-1 border-gray-300 dark:border-gray-600">学歴</h3>
+  <div class="space-y-4">
+    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
+      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2021</span>
+      <p class="font-medium">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
+    </div>
+  </div>
+
+  <!-- 職歴 -->
+  <h3 class="text-2xl font-bold mt-10 mb-6 border-b pb-1 border-gray-300 dark:border-gray-600">職歴</h3>
+  <div class="space-y-4">
+    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
+      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2021-2022</span>
+      <p class="font-medium">八紘電機株式会社           入社</p>
+    </div>
+    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
+      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2022-2023</span>
+      <p class="font-medium">CTW株式会社           入社</p>
+    </div>
+    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
+      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2023–現在</span>
+      <p class="font-medium">株式会社Happy           入社（現職）</p>
+    </div>
+  </div>
 </section>
 
 <!-- 実績一覧 -->
