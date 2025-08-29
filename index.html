@@ -124,32 +124,35 @@
   <!-- 🔹 分隔线 -->
   <hr class="my-10 border-gray-300 dark:border-gray-600">
 
-  <!-- 学歴 -->
-  <h3 class="text-2xl font-bold mb-6 border-b pb-1 border-gray-300 dark:border-gray-600">学歴</h3>
-  <div class="space-y-4">
-    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
-      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2021</span>
-      <p class="font-medium">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
-    </div>
-  </div>
+<!-- 学歴 -->
+<h3 class="text-2xl font-bold mb-6 border-b pb-1 border-gray-300 dark:border-gray-600">学歴</h3>
+<div class="grid md:grid-cols-2 gap-6 mb-10">
+  <a href="#"
+     class="portfolio-card p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+    <h4 class="font-semibold text-lg">2021</h4>
+    <p class="text-sm">京都芸術大学 大学院 プロダクトデザイン専攻 修了</p>
+  </a>
+</div>
 
-  <!-- 職歴 -->
-  <h3 class="text-2xl font-bold mt-10 mb-6 border-b pb-1 border-gray-300 dark:border-gray-600">職歴</h3>
-  <div class="space-y-4">
-    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
-      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2021-2022</span>
-      <p class="font-medium">八紘電機株式会社           入社</p>
-    </div>
-    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
-      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2022-2023</span>
-      <p class="font-medium">CTW株式会社           入社</p>
-    </div>
-    <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg shadow">
-      <span class="text-sm text-indigo-600 dark:text-indigo-300 font-semibold">2023–現在</span>
-      <p class="font-medium">株式会社Happy           入社（現職）</p>
-    </div>
-  </div>
-</section>
+<!-- 職歴 -->
+<h3 class="text-2xl font-bold mb-6 border-b pb-1 border-gray-300 dark:border-gray-600">職歴</h3>
+<div class="grid md:grid-cols-3 gap-6">
+  <a href="#"
+     class="portfolio-card p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+    <h4 class="font-semibold text-lg">2021–2022</h4>
+    <p class="text-sm">八紘電機株式会社 入社</p>
+  </a>
+  <a href="#"
+     class="portfolio-card p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+    <h4 class="font-semibold text-lg">2022–2023</h4>
+    <p class="text-sm">CTW株式会社 入社</p>
+  </a>
+  <a href="#"
+     class="portfolio-card p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+    <h4 class="font-semibold text-lg">2023–現在</h4>
+    <p class="text-sm">株式会社Happy 入社（現職）</p>
+  </a>
+</div>
 
 <!-- 実績一覧 -->
 <section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
@@ -298,25 +301,28 @@
       <p class="text-sm">プロジェクトの立ち上げ経緯、翻訳方針、タスク管理などをまとめた企画書。</p>
     </a>
   </div>
-  
-<!-- Weibo SNS Link -->
-<div class="mb-6">
+
+<!-- Weibo SNS Link (横幅风) -->
+<div class="grid grid-cols-1 mb-6">
   <a href="https://weibo.com/u/3950079300" target="_blank"
-     class="flex items-center space-x-4 p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
-    
-    <!-- 微博头像 -->
-    <img src="images/weibo-avatar.png" alt="Weibo" class="w-14 h-14 rounded-full object-cover border border-gray-300 shadow-sm">
-    
-    <!-- 文案 -->
+     class="portfolio-card flex items-center p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+
+    <!-- 左侧：微博头像 -->
+    <img src="images/weibo-avatar.png" alt="Weibo"
+         class="w-20 h-20 rounded-full object-cover border border-gray-300 shadow-md mr-4">
+
+    <!-- 右侧：标题和描述 -->
     <div>
       <h4 class="font-semibold text-lg text-indigo-600 dark:text-indigo-400">
         FLOWERS 中国語版 公式アカウント（Weibo）
       </h4>
-      <p class="text-sm text-gray-600 dark:text-gray-300">翻訳・運営情報を発信していた公式SNSアカウント</p>
+      <p class="text-sm text-gray-600 dark:text-gray-300">
+        翻訳・運営情報を発信していた公式SNSアカウント
+      </p>
     </div>
   </a>
 </div>
-
+  
   <!-- 春夏 (一行两列) -->
   <div class="grid md:grid-cols-2 gap-6 mb-6">
     <!-- 春 -->
