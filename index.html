@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MYMYMY - KYOU</title>
+  <meta name="description" content="KYOU - Game Operation / PM / QA / Graphic Designer / Event Planner. Portfolio website.">
+  <meta name="keywords" content="Game Operation, PM, QA, Graphic Designer, Event Planner, Portfolio, KYOU">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { darkMode: 'class' }
@@ -27,6 +29,10 @@
       background: linear-gradient(-45deg, #667eea, #764ba2, #6b21a8, #3b82f6);
       background-size: 400% 400%;
       animation: gradientFlow 15s ease infinite;
+    }
+    /* ✅ 修复导航遮挡 */
+    :target {
+      scroll-margin-top: 80px;
     }
   </style>
 </head>
@@ -62,13 +68,15 @@
   <!-- Hero -->
   <section id="hero" class="h-screen flex flex-col justify-center items-center text-center text-white animated-bg">
     <div class="max-w-2xl" data-aos="fade-up">
-      <img src="images/MYMYMY.jpg" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover">
+      <img src="images/MYMYMY.jpg" alt="profile" class="w-40 h-40 rounded-lg border-4 border-white mx-auto mb-6 shadow-xl object-cover" loading="lazy">
       <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">KYOU</h1>
-      <p class="text-lg md:text-2xl mb-2 opacity-90">Game Operation / PM / QA<br>Graphic Designe / Event Planner</p>
+      <!-- ✅ 修复拼写 -->
+      <p class="text-lg md:text-2xl mb-2 opacity-90">Game Operation / PM / QA<br>Graphic Designer / Event Planner</p>
       <p class="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">Creative & Functional Design for Games and Events</p>
     </div>
   </section>
 
+  <!-- ✅ 修复 main -->
   <main class="mt-20 space-y-16 max-w-6xl mx-auto">
 
 <!-- 自己紹介 -->
@@ -334,8 +342,7 @@
   </div>
 </section>
 
-
-   <!-- 使用ツール -->
+  <!-- 使用ツール -->
 <section id="tools" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-10" data-aos="fade-up">
   <h2 class="text-3xl font-bold mb-10 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
   <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
@@ -346,6 +353,11 @@
     <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition">
       <i data-lucide="star" class="w-10 h-10 mx-auto mb-3" style="color:#FF9A00"></i>
       <p class="font-semibold">Illustrator</p>
+    </div>
+    <!-- ✅ 新增 Aegisub -->
+    <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition">
+      <i data-lucide="type" class="w-10 h-10 mx-auto mb-3" style="color:#8A2BE2"></i>
+      <p class="font-semibold">Aegisub</p>
     </div>
     <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition">
       <i data-lucide="file-text" class="w-10 h-10 mx-auto mb-3" style="color:#2B579A"></i>
@@ -361,7 +373,7 @@
     </div>
   </div>
 </section>
-
+    
  <!-- 私について -->
 <section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
   <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 私について</h2>
@@ -432,7 +444,7 @@
         <p>한국어: 이 웹사이트는 개인적인 흥미로 만든 것이니 연락은 삼가해 주시기 바랍니다. 저는 현재 회사에서 즐겁게 일하고 있습니다.</p>
       </div>
     </section>
-  </main>
+</main>
 
   <!-- Back to top -->
   <button id="backToTop" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition">↑</button>
