@@ -33,26 +33,26 @@
      scroll-margin-top: 80px; /* 根据导航栏高度可调，比如 60-80px */
    }
 
-   /* ✅ Swiper 自定义紫色主题 */
-   .swiper-pagination-bullet {
-     background: #8b5cf6 !important;
-     opacity: 0.5;
-   }
-   .swiper-pagination-bullet-active {
-     background: #8b5cf6 !important;
-     opacity: 1;
-   }
-   .swiper-button-next,
-   .swiper-button-prev {
-     color: #8b5cf6 !important;
-     fill: #8b5cf6 !important;
-     stroke: #8b5cf6 !important;
-     transition: color 0.3s ease;
-   }
-   .swiper-button-next:hover,
-   .swiper-button-prev:hover {
-     color: #a78bfa !important;
-   }
+/* ✅ Swiper 自定义主题，和标题颜色一致 */
+.swiper-pagination-bullet {
+  background: #4f46e5 !important;  /* indigo-600 */
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: #4f46e5 !important;  /* indigo-600 */
+  opacity: 1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4f46e5 !important;   /* indigo-600 */
+  fill: #4f46e5 !important;
+  stroke: #4f46e5 !important;
+  transition: color 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #818cf8 !important;   /* indigo-400 (hover时更亮，和暗色一致) */
+}
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
@@ -174,7 +174,7 @@
     
           <!-- 会社カタログ -->
           <a href="#"
-             class="pdf-link block p-4 border rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105"
+             class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
              data-link="https://drive.google.com/file/d/1aWW4SiwCUDK8FGguC-LIVNoTABj5q201/view?usp=drive_link">
             <img src="images/yahiro_design1.png" alt="会社カタログ" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center">会社カタログ</p>
@@ -182,7 +182,7 @@
 
           <!-- 会社パンフレット -->
           <a href="#"
-             class="pdf-link block p-4 border rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105"
+             class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
              data-link="https://drive.google.com/file/d/1eYd87OIsM2YriO2sOBLkEI-Gc0UjgQQY/view?usp=drive_link">
             <img src="images/yahiro_design2.png" alt="会社パンフレット" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center">会社パンフレット</p>
@@ -196,7 +196,7 @@
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200">Event Planner</summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
           <a href="#"
-             class="pdf-link block p-4 border rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105"
+             class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
              data-link="https://drive.google.com/file/d/105B7EzpLmAPlZHYhTZ3IOCx67rGuOO-H/view?usp=drive_link">
             <img src="images/yahiro_event.png" alt="会社制作事例" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center">会社制作事例</p>
@@ -216,35 +216,35 @@
 
           <!-- 艦隊少女 -->
           <a href="https://g123.jp/news/kantai?lang=ja" target="_blank"
-             class="block border rounded-lg overflow-hidden hover:shadow-lg transition transform hover:scale-105">
+             class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
             <img src="images/ctw_kantai.png" alt="艦隊少女" class="w-full object-cover rounded" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700">艦隊少女（サービス終了）</p>
           </a>
 
           <!-- 宇宙戦艦ヤマト -->
           <a href="https://g123.jp/game/yamato?lang=ja" target="_blank"
-             class="block border rounded-lg overflow-hidden hover:shadow-lg transition transform hover:scale-105">
+             class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
             <img src="images/ctw_yamato.jpg" alt="宇宙戦艦ヤマト" class="w-full object-cover rounded" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700">宇宙戦艦ヤマト 未来への航路</p>
           </a>
 
           <!-- 銀河英雄伝説 -->
           <a href="https://g123.jp/game/ginei?lang=ja" target="_blank"
-             class="block border rounded-lg overflow-hidden hover:shadow-lg transition transform hover:scale-105">
+             class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
             <img src="images/ctw_ginei.png" alt="銀河英雄伝説" class="w-full object-cover rounded" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700">銀河英雄伝説 戦いの輪舞曲</p>
           </a>
 
           <!-- ウィクロスマルチバース -->
           <a href="https://g123.jp/game/wixoss?lang=ja" target="_blank"
-             class="block border rounded-lg overflow-hidden hover:shadow-lg transition transform hover:scale-105">
+             class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
             <img src="images/ctw_wixoss.png" alt="ウィクロスマルチバース" class="w-full object-cover" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700">ウィクロスマルチバース</p>
           </a>
 
           <!-- 精霊幻想記アナザーテイル -->
           <a href="https://g123.jp/game/seirei?lang=ja" target="_blank"
-             class="block border rounded-lg overflow-hidden hover:shadow-lg transition transform hover:scale-105">
+             class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
             <img src="images/ctw_seirei.png" alt="精霊幻想記アナザーテイル" class="w-full object-cover" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700">精霊幻想記アナザーテイル</p>
           </a>
@@ -257,13 +257,13 @@
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200">Game Operation</summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
           <a href="#"
-             class="pdf-link block p-4 border rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105"
+             class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
              data-link="https://drive.google.com/file/d/1Gf_nrrbmCQT2N5nIlAf48qYRRYandxsW/view?usp=drive_link">
             <img src="images/ctw_game1.jpg" alt="KPI増加" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center">ギフト販売によるKPIの大幅な増加</p>
           </a>
           <a href="#"
-             class="pdf-link block p-4 border rounded-lg bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105"
+             class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
              data-link="https://drive.google.com/file/d/1xv6WF43d-bgWQIg7iHVD2GaClt37v6He/view?usp=drive_link">
             <img src="images/ctw_game2.jpg" alt="イベント企画" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center">イベント企画と実行における成功事例</p>
