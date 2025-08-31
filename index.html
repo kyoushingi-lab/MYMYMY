@@ -33,25 +33,47 @@
      scroll-margin-top: 80px; /* 根据导航栏高度可调，比如 60-80px */
    }
 
-/* ✅ Swiper 自定义主题，和标题颜色一致 */
+/* ✅ Swiper 自定义主题，跟标题颜色保持一致 */
+
+/* 默认（浅色模式） */
 .swiper-pagination-bullet {
-  background: #4f46e5 !important;  /* indigo-600 */
+  background: #4f46e5 !important; /* indigo-600 */
   opacity: 0.5;
 }
 .swiper-pagination-bullet-active {
-  background: #4f46e5 !important;  /* indigo-600 */
+  background: #4f46e5 !important; /* indigo-600 */
   opacity: 1;
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #4f46e5 !important;   /* indigo-600 */
+  color: #4f46e5 !important;  /* indigo-600 */
   fill: #4f46e5 !important;
   stroke: #4f46e5 !important;
   transition: color 0.3s ease;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #818cf8 !important;   /* indigo-400 (hover时更亮，和暗色一致) */
+  color: #4338ca !important; /* indigo-700 (hover时更深) */
+}
+
+/* 🌙 Dark 模式 */
+.dark .swiper-pagination-bullet {
+  background: #818cf8 !important; /* indigo-400 */
+  opacity: 0.5;
+}
+.dark .swiper-pagination-bullet-active {
+  background: #818cf8 !important; /* indigo-400 */
+  opacity: 1;
+}
+.dark .swiper-button-next,
+.dark .swiper-button-prev {
+  color: #818cf8 !important; /* indigo-400 */
+  fill: #818cf8 !important;
+  stroke: #818cf8 !important;
+}
+.dark .swiper-button-next:hover,
+.dark .swiper-button-prev:hover {
+  color: #a5b4fc !important; /* indigo-300 (hover更亮) */
 }
   </style>
 </head>
