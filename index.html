@@ -530,27 +530,47 @@ section:target {
   </p>
 </footer>
 
-  <script>lucide.createIcons();</script>
+   <script>lucide.createIcons();</script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  AOS.init();
+  <script>
+    AOS.init();
 
-  // ✅ 只在第一次进入时跳到 Hero
-  window.addEventListener("load", () => {
-    if (!sessionStorage.getItem("visited")) {
-      window.scrollTo(0, 0); // Hero 顶部
-      sessionStorage.setItem("visited", "true");
-    }
-  });
+    // ✅ 只在第一次进入时跳到 Hero
+    window.addEventListener("load", () => {
+      if (!sessionStorage.getItem("visited")) {
+        window.scrollTo(0, 0); // Hero 顶部
+        sessionStorage.setItem("visited", "true");
+      }
+    });
 
-  document.getElementById("darkToggle").addEventListener("click",()=>{document.documentElement.classList.toggle("dark");});
-  document.getElementById("menuToggle").addEventListener("click",()=>{document.getElementById("mobileMenu").classList.toggle("hidden");});
-  const backToTop=document.getElementById("backToTop");
-  window.addEventListener("scroll",()=>{backToTop.style.display=window.scrollY>300?"block":"none";});
-  backToTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
-  new Swiper(".swiper",{loop:true,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
-</script>
+    // 夜间模式切换
+    document.getElementById("darkToggle").addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+    });
+
+    // 移动端菜单切换
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+
+    // 回到顶部按钮
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    backToTop.addEventListener("click", () =>
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    );
+
+    // Swiper 初始化
+    new Swiper(".swiper", {
+      loop: true,
+      pagination: { el: ".swiper-pagination" },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+    });
+  </script>
+
 
 </body>
 </html>
