@@ -77,11 +77,8 @@ section:target {
   <main class="mt-20 space-y-16 max-w-6xl mx-auto">
 
    <!-- 自己紹介 -->
-<h2 class="text-3xl font-bold mb-10 border-b-2 pb-2 
-           text-indigo-600 dark:text-indigo-400 
-           border-indigo-500 dark:border-indigo-400">
-  1. 自己紹介
-</h2>
+    <section id="about" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-10" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-10 border-b-2 pb-2 text-indigo-600 dark:text-indigo-400">1. 自己紹介</h2>
       <div class="grid md:grid-cols-3 gap-10 items-start">
         <div class="md:col-span-1 text-center space-y-4">
           <img src="images/MYMYMY.jpg" alt="KYOU" 
@@ -132,11 +129,9 @@ section:target {
 
     
 <!-- 実績一覧 -->
-<h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 
-           text-indigo-600 dark:text-indigo-400 
-           border-indigo-500 dark:border-indigo-400">
-  2. 実績一覧
-</h2>
+<section id="works" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 text-indigo-600 dark:text-indigo-400">2. 実績一覧</h2>
+  
   <div class="space-y-12">
     
    <!-- 八紘電機 -->
@@ -265,11 +260,8 @@ section:target {
 </script>
 
 <!-- 作品展示 -->
-<h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 
-           text-indigo-600 dark:text-indigo-400 
-           border-indigo-500 dark:border-indigo-400">
-  3. 作品展示
-</h2>
+<section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">3. 作品展示</h2>
   <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">PCゲーム《FLOWERS》ローカライズプロジェクト</h3>
 
 <!-- 企画書 (独占一行) -->
@@ -285,11 +277,13 @@ section:target {
 <!-- Weibo SNS Link (横幅风) -->
 <div class="grid grid-cols-1 mb-6">
   <a href="https://weibo.com/u/3950079300" target="_blank"
-     class="portfolio-card flex items-center p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+     class="portfolio-card flex items-center p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 
+            hover:shadow-lg transition transform hover:scale-105
+            border-gray-300 dark:border-gray-600">
 
     <!-- 左侧：微博头像 -->
     <img src="images/flowers-weibo-avatar.png" alt="Weibo"
-         class="w-20 h-20 rounded-full object-cover border border-gray-300 shadow-md mr-4">
+         class="w-20 h-20 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-md mr-4">
 
     <!-- 右侧：标题和描述 -->
     <div>
@@ -346,12 +340,9 @@ section:target {
   </div>
 </section>
 
- <!-- 使用ツール -->
-<h2 class="text-3xl font-bold mb-10 border-b-2 pb-2 
-           text-indigo-600 dark:text-indigo-400 
-           border-indigo-500 dark:border-indigo-400">
-  4. 使用ツール
-</h2>
+  <!-- 使用ツール -->
+<section id="tools" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-10" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-10 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">4. 使用ツール</h2>
   <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
     <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition">
       <i data-lucide="image" class="w-10 h-10 mx-auto mb-3" style="color:#31A8FF"></i>
@@ -382,11 +373,8 @@ section:target {
 </section>
     
 <!-- 私について -->
-<h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 
-           text-indigo-600 dark:text-indigo-400 
-           border-indigo-500 dark:border-indigo-400">
-  5. 私について
-</h2>
+<section id="me" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">5. 私について</h2>
   
   <!-- 猫 -->
   <div class="mb-12">
@@ -447,26 +435,28 @@ section:target {
 <div class="mb-12">
   <h3 class="font-semibold text-xl mb-6 text-indigo-600 dark:text-indigo-400">推し活</h3>
 
-  <!-- Weibo SNS Link -->
-  <div class="grid grid-cols-1 mb-6">
-    <a href="https://weibo.com/u/6885862594" target="_blank"
-       class="portfolio-card flex items-center p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition transform hover:scale-105">
+  <!-- Weibo SNS Link (横幅风) -->
+<div class="grid grid-cols-1 mb-6">
+  <a href="https://weibo.com/u/6885862594" target="_blank"
+     class="portfolio-card flex items-center p-4 border rounded-xl bg-gray-50 dark:bg-gray-700 
+            hover:shadow-lg transition transform hover:scale-105
+            border-gray-300 dark:border-gray-600">
 
-      <!-- 左侧：微博头像 -->
-      <img src="images/yurika-weibo-avatar.jpg" alt="Weibo"
-           class="w-20 h-20 rounded-full object-cover border border-gray-300 shadow-md mr-4">
+    <!-- 左侧：微博头像 -->
+    <img src="images/yurika-weibo-avatar.jpg" alt="Weibo"
+         class="w-20 h-20 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-md mr-4">
 
-      <!-- 右侧：标题和描述 -->
-      <div>
-        <h4 class="font-semibold text-lg text-indigo-600 dark:text-indigo-400">
-          中村ゆりかファン応援用アカウント（Weibo）
-        </h4>
-        <p class="text-sm text-gray-600 dark:text-gray-300">
-          翻訳・応援情報を発信していたSNSアカウント
-        </p>
-      </div>
-    </a>
-  </div>
+    <!-- 右侧：标题和描述 -->
+    <div>
+      <h4 class="font-semibold text-lg text-indigo-600 dark:text-indigo-400">
+        中村ゆりかファン応援用アカウント（Weibo）
+      </h4>
+      <p class="text-sm text-gray-600 dark:text-gray-300">
+        翻訳・応援情報を発信していたSNSアカウント
+      </p>
+    </div>
+  </a>
+</div>
 
   <!-- 🔹四格推活 -->
   <div class="grid md:grid-cols-4 gap-6 mt-6">
@@ -510,11 +500,8 @@ section:target {
 </section>
 
 <!-- お問い合わせ -->
-<h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 
-           text-indigo-600 dark:text-indigo-400 
-           border-indigo-500 dark:border-indigo-400">
-  6. お問い合わせ
-</h2>
+    <section id="contact" class="bg-gray-50 dark:bg-gray-700 shadow-lg rounded-2xl p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 border-indigo-500 dark:border-indigo-400">6. お問い合わせ</h2>
       <div class="space-y-4 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
         <p>中文：这个网页只是我基于个人兴趣建立的，请勿联系我。目前我在现有的公司工作得很愉快。</p>
         <p>日本語：このウェブサイトは個人的な興味で作成したものですので、ご連絡はご遠慮ください。現在の会社で楽しく働いています。</p>
