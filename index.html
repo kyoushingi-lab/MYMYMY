@@ -29,9 +29,30 @@
       animation: gradientFlow 15s ease infinite;
     }
    /* 只对 section 生效，避免 Hero 自动错位 */
-section:target {
-  scroll-margin-top: 80px; /* 根据导航栏高度可调，比如 60-80px */
-}
+   section:target {
+     scroll-margin-top: 80px; /* 根据导航栏高度可调，比如 60-80px */
+   }
+
+   /* ✅ Swiper 自定义紫色主题 */
+   .swiper-pagination-bullet {
+     background: #8b5cf6 !important;
+     opacity: 0.5;
+   }
+   .swiper-pagination-bullet-active {
+     background: #8b5cf6 !important;
+     opacity: 1;
+   }
+   .swiper-button-next,
+   .swiper-button-prev {
+     color: #8b5cf6 !important;
+     fill: #8b5cf6 !important;
+     stroke: #8b5cf6 !important;
+     transition: color 0.3s ease;
+   }
+   .swiper-button-next:hover,
+   .swiper-button-prev:hover {
+     color: #a78bfa !important;
+   }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
