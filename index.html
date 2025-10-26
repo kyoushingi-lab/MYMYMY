@@ -157,13 +157,19 @@
       <details class="mb-6">
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200" data-i18n="works.role.gd"></summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
+          <!-- 公司目录 -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://drive.google.com/file/d/1aWW4SiwCUDK8FGguC-LIVNoTABj5q201/view?usp=drive_link">
+             data-link-ja="https://drive.google.com/file/d/1aWW4SiwCUDK8FGguC-LIVNoTABj5q201/view?usp=drive_link"
+             data-link-en="https://drive.google.com/file/d/1aWW4SiwCUDK8FGguC-LIVNoTABj5q201/view?usp=drive_link"
+             data-link-zh="https://drive.google.com/file/d/1aWW4SiwCUDK8FGguC-LIVNoTABj5q201/view?usp=drive_link">
             <img src="images/yahiro_design1.png" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.yahiro.catalog"></p>
           </a>
+          <!-- 公司宣传册 -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://drive.google.com/file/d/1eYd87OIsM2YriO2sOBLkEI-Gc0UjgQQY/view?usp=drive_link">
+             data-link-ja="https://drive.google.com/file/d/1eYd87OIsM2YriO2sOBLkEI-Gc0UjgQQY/view?usp=drive_link"
+             data-link-en="https://drive.google.com/file/d/1eYd87OIsM2YriO2sOBLkEI-Gc0UjgQQY/view?usp=drive_link"
+             data-link-zh="https://drive.google.com/file/d/1fgDihuhetkbLAS6hPFTLXrlIyvK9GUBh/view?usp=drive_link">
             <img src="images/yahiro_design2.png" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.yahiro.pamphlet"></p>
           </a>
@@ -173,8 +179,11 @@
       <details class="mb-6">
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200" data-i18n="works.role.ep"></summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
+          <!-- 公司作品集案例 -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://drive.google.com/file/d/105B7EzpLmAPlZHYhTZ3IOCx67rGuOO-H/view?usp=drive_link">
+             data-link-ja="https://drive.google.com/file/d/105B7EzpLmAPlZHYhTZ3IOCx67rGuOO-H/view?usp=drive_link"
+             data-link-en="https://drive.google.com/file/d/1n8MVSPdsWKTOwMza81-0vFj3XnsPUL3_/view?usp=drive_link"
+             data-link-zh="https://drive.google.com/file/d/1fgDihuhetkbLAS6hPFTLXrlIyvK9GUBh/view?usp=drive_link">
             <img src="images/yahiro_event.png" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.yahiro.case"></p>
           </a>
@@ -189,23 +198,39 @@
       <details class="mb-6">
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200" data-i18n="works.role.pm"></summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
-          <a href="https://g123.jp/news/kantai?lang=ja" target="_blank" class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
+          <!-- 下面这 5 个是普通外链，改到第②段去做 data-href，多语言切换。这里只保留结构。 -->
+          <a class="i18n-href block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105"
+             data-href-ja="https://g123.jp/news/kantai?lang=ja"
+             data-href-en="https://g123.jp/news/kantai?lang=en"
+             data-href-zh="https://g123.jp/news/kantai?lang=zh" target="_blank">
             <img src="images/ctw_kantai.png" alt="" class="w-full object-cover rounded" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700" data-i18n="works.ctw.kantai"></p>
           </a>
-          <a href="https://g123.jp/game/yamato?lang=ja" target="_blank" class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
+          <a class="i18n-href block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105"
+             data-href-ja="https://g123.jp/game/yamato?lang=ja"
+             data-href-en="https://g123.jp/game/yamato?lang=en"
+             data-href-zh="https://g123.jp/game/yamato?lang=zh" target="_blank">
             <img src="images/ctw_yamato.jpg" alt="" class="w-full object-cover rounded" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700" data-i18n="works.ctw.yamato"></p>
           </a>
-          <a href="https://g123.jp/game/ginei?lang=ja" target="_blank" class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
+          <a class="i18n-href block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105"
+             data-href-ja="https://g123.jp/game/ginei?lang=ja"
+             data-href-en="https://g123.jp/game/ginei?lang=en"
+             data-href-zh="https://g123.jp/game/ginei?lang=zh" target="_blank">
             <img src="images/ctw_ginei.png" alt="" class="w-full object-cover rounded" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700" data-i18n="works.ctw.ginei"></p>
           </a>
-          <a href="https://g123.jp/game/wixoss?lang=ja" target="_blank" class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
+          <a class="i18n-href block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105"
+             data-href-ja="https://g123.jp/game/wixoss?lang=ja"
+             data-href-en="https://g123.jp/game/wixoss?lang=en"
+             data-href-zh="https://g123.jp/game/wixoss?lang=zh" target="_blank">
             <img src="images/ctw_wixoss.png" alt="" class="w-full object-cover" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700" data-i18n="works.ctw.wixoss"></p>
           </a>
-          <a href="https://g123.jp/game/seirei?lang=ja" target="_blank" class="block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105">
+          <a class="i18n-href block rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:scale-105"
+             data-href-ja="https://g123.jp/game/seirei?lang=ja"
+             data-href-en="https://g123.jp/game/seirei?lang=en"
+             data-href-zh="https://g123.jp/game/seirei?lang=zh" target="_blank">
             <img src="images/ctw_seirei.png" alt="" class="w-full object-cover" style="aspect-ratio:600/1138;">
             <p class="text-center font-semibold p-2 bg-gray-50 dark:bg-gray-700" data-i18n="works.ctw.seirei"></p>
           </a>
@@ -215,13 +240,19 @@
       <details>
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200" data-i18n="works.role.op"></summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
+          <!-- 游戏礼包售卖 PDF -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://drive.google.com/file/d/1Gf_nrrbmCQT2N5nIlAf48qYRRYandxsW/view?usp=drive_link">
+             data-link-ja="https://drive.google.com/file/d/1Gf_nrrbmCQT2N5nIlAf48qYRRYandxsW/view?usp=drive_link"
+             data-link-en="https://drive.google.com/file/d/11he4c7U9pXixkHvpzYWubbx9tGZEYvhi/view?usp=drive_link"
+             data-link-zh="https://drive.google.com/file/d/1eysFGq5zlpgJaWAlCxfzGA-XFToH3guQ/view?usp=drive_link">
             <img src="images/ctw_game1.jpg" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.ctw.kpi"></p>
           </a>
+          <!-- 游戏活动策划 PDF -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://drive.google.com/file/d/1xv6WF43d-bgWQIg7iHVD2GaClt37v6He/view?usp=drive_link">
+             data-link-ja="https://drive.google.com/file/d/1xv6WF43d-bgWQIg7iHVD2GaClt37v6He/view?usp=drive_link"
+             data-link-en="https://drive.google.com/file/d/1PdAU5H5puU5_5z88h1p-fJ9u0wRLuhBM/view?usp=drive_link"
+             data-link-zh="https://drive.google.com/file/d/12e5tAGpP7HwcAdG6BJvHa9M5vWRc7z9B/view?usp=drive_link">
             <img src="images/ctw_game2.jpg" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.ctw.event"></p>
           </a>
@@ -236,13 +267,19 @@
       <details class="mb-6">
         <summary class="cursor-pointer font-medium text-gray-800 dark:text-gray-200" data-i18n="works.role.qa"></summary>
         <div class="grid md:grid-cols-3 gap-6 mt-4">
+          <!-- QA 用例（Google 表格）也按 pdf-link 处理，保持统一密码弹窗体验 -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://docs.google.com/spreadsheets/d/19C02X-HV6lsJRzRN_Bu52m--RgqSJ8LLLgM6fZoFfWk/edit?usp=sharing">
+             data-link-ja="https://docs.google.com/spreadsheets/d/19C02X-HV6lsJRzRN_Bu52m--RgqSJ8LLLgM6fZoFfWk/edit?usp=sharing"
+             data-link-en="https://docs.google.com/spreadsheets/d/19C02X-HV6lsJRzRN_Bu52m--RgqSJ8LLLgM6fZoFfWk/edit?usp=sharing"
+             data-link-zh="https://docs.google.com/spreadsheets/d/19C02X-HV6lsJRzRN_Bu52m--RgqSJ8LLLgM6fZoFfWk/edit?usp=sharing">
             <img src="images/a-qa.png" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.yostar.qaCases"></p>
           </a>
+          <!-- 伤害计算器（站点）也可按 pdf-link 保持一致，或改成普通外链 i18n-href。这里按 pdf-link 处理。 -->
           <a href="#" class="pdf-link block p-4 rounded-lg bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
-             data-link="https://kyoushingi-lab.github.io/azurlane-damage-calc/">
+             data-link-ja="https://kyoushingi-lab.github.io/azurlane-damage-calc/"
+             data-link-en="https://kyoushingi-lab.github.io/azurlane-damage-calc/"
+             data-link-zh="https://kyoushingi-lab.github.io/azurlane-damage-calc/">
             <img src="images/a-calc.png" alt="" class="w-full h-32 object-contain mb-3 rounded">
             <p class="font-semibold text-center" data-i18n="works.yostar.calc"></p>
           </a>
@@ -253,52 +290,19 @@
   </div>
 </section>
 
-<!-- 🔐 PDF 密码保护脚本（多语言版） -->
-<script>
-  const pdfMsg = {
-    ja: {
-      prompt: "パスワードを入力してください:",
-      success: "", // 无需提示
-      error: "パスワードが間違っています！"
-    },
-    en: {
-      prompt: "Please enter the password:",
-      success: "",
-      error: "Incorrect password!"
-    },
-    zh: {
-      prompt: "请输入密码：",
-      success: "",
-      error: "密码错误！"
-    }
-  };
-
-  document.addEventListener('click', e => {
-    const a = e.target.closest('.pdf-link');
-    if (!a) return;
-    e.preventDefault();
-
-    const lang = localStorage.getItem("lang") || "ja"; // 语言取自当前选择
-    const msg = pdfMsg[lang] || pdfMsg.ja;
-
-    const pwd = prompt(msg.prompt);
-    if (pwd === "lovely") {
-      window.open(a.getAttribute("data-link"), "_blank");
-    } else {
-      alert(msg.error);
-    }
-  });
-</script>
 
 <!-- 作品展示 -->
 <section id="portfolio" class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8" data-aos="fade-up">
   <h2 class="text-3xl font-bold mb-6 border-b-2 pb-2 text-indigo-600 dark:text-indigo-400" data-i18n="portfolio.title"></h2>
   <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400" data-i18n="portfolio.flowersTitle"></h3>
 
-  <!-- 企画書 -->
+  <!-- 企画書（普通外链；你也可以改成 pdf-link 走密码弹窗） -->
   <div class="grid grid-cols-1 mb-6">
-    <a href="https://drive.google.com/file/d/1ww1EgNyFwFlbXtQI3IOanVBrs1k4MiT-/view?usp=drive_link" target="_blank"
-       class="portfolio-card p-4 rounded-xl bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105">
+    <a class="i18n-href portfolio-card p-4 rounded-xl bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
+       target="_blank"
+       data-href-ja="https://drive.google.com/file/d/1GQiCfOqIEoUMh3a3_1cqbnvxHsyh1M4f/view?usp=drive_link"
+       data-href-en="https://drive.google.com/file/d/1Uyingqci3ZktW3M7UGRizJKBymu9vLO9/view?usp=drive_link"
+       data-href-zh="https://drive.google.com/file/d/1vPcnEMV7Le_kmTEOY34yhIfG00ace3aR/view?usp=drive_link">
       <img src="images/flowers-pdf-preview.png" class="w-full h-56 object-cover rounded-lg mb-3" alt="">
       <h4 class="font-semibold text-lg" data-i18n="portfolio.plan"></h4>
       <p class="text-sm" data-i18n="portfolio.planDesc"></p>
@@ -456,13 +460,16 @@
             class="rounded-lg shadow-md border border-indigo-200 dark:border-indigo-600 transition transform hover:shadow-xl hover:scale-105"></iframe>
   </div>
 
-  <!-- 推し活 -->
+ <!-- 推し活 -->
   <div class="mb-12">
     <h3 class="font-semibold text-xl mb-6 text-indigo-600 dark:text-indigo-400" data-i18n="me.oshikatsu.title"></h3>
 
     <div class="grid grid-cols-1 mb-6">
-      <a href="https://weibo.com/u/6885862594" target="_blank"
-         class="portfolio-card flex items-center p-4 rounded-xl bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105">
+      <a class="i18n-href portfolio-card flex items-center p-4 rounded-xl bg-gray-50 dark:bg-gray-700 shadow hover:shadow-lg transition transform hover:scale-105"
+         target="_blank"
+         data-href-ja="https://weibo.com/u/6885862594"
+         data-href-en="https://weibo.com/u/6885862594"
+         data-href-zh="https://weibo.com/u/6885862594">
         <img src="images/yurika-weibo-avatar.jpg" alt="Weibo"
              class="w-20 h-20 rounded-full object-cover border border-gray-300 dark:border-gray-600 shadow-md mr-4">
         <div>
@@ -473,26 +480,40 @@
     </div>
 
     <div class="grid md:grid-cols-4 gap-6 mt-6">
-      <a href="https://drive.google.com/file/d/1SY2lzz5mwrWwvw--3Tq-qBQVU8PNlo79/view?usp=drive_link" target="_blank"
-         class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
+      <a class="i18n-href block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+         target="_blank"
+         data-href-ja="https://drive.google.com/file/d/1SY2lzz5mwrWwvw--3Tq-qBQVU8PNlo79/view?usp=drive_link"
+         data-href-en="https://drive.google.com/file/d/1SY2lzz5mwrWwvw--3Tq-qBQVU8PNlo79/view?usp=drive_link"
+         data-href-zh="https://drive.google.com/file/d/1SY2lzz5mwrWwvw--3Tq-qBQVU8PNlo79/view?usp=drive_link">
         <img src="images/yuluna-fanletter1.png" alt="" class="w-full h-40 object-cover rounded-lg mb-3">
         <p class="text-center font-semibold" data-i18n="me.oshikatsu.fan1"></p>
       </a>
 
-      <a href="https://drive.google.com/file/d/1FGKPSPUshlQix_xMYRJ1xpGAPwc1PFPT/view?usp=drive_link" target="_blank"
-         class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
+      <a class="i18n-href block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+         target="_blank"
+         data-href-ja="https://drive.google.com/file/d/1FGKPSPUshlQix_xMYRJ1xpGAPwc1PFPT/view?usp=drive_link"
+         data-href-en="https://drive.google.com/file/d/1FGKPSPUshlQix_xMYRJ1xpGAPwc1PFPT/view?usp=drive_link"
+         data-href-zh="https://drive.google.com/file/d/1FGKPSPUshlQix_xMYRJ1xpGAPwc1PFPT/view?usp=drive_link">
         <img src="images/yuluna-fanletter2.png" alt="" class="w-full h-40 object-cover rounded-lg mb-3">
         <p class="text-center font-semibold" data-i18n="me.oshikatsu.fan2"></p>
       </a>
 
-      <a href="https://drive.google.com/file/d/1pBcU1ZO1jjiQHH7m8VZuFA8CamsKY-W0/view?usp=drive_link" target="_blank"
-         class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
+      <a class="i18n-href block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+         target="_blank"
+         data-href-ja="https://drive.google.com/file/d/1pBcU1ZO1jjiQHH7m8VZuFA8CamsKY-W0/view?usp=drive_link"
+         data-href-en="https://drive.google.com/file/d/1pBcU1ZO1jjiQHH7m8VZuFA8CamsKY-W0/view?usp=drive_link"
+         data-href-zh="https://drive.google.com/file/d/1pBcU1ZO1jjiQHH7m8VZuFA8CamsKY-W0/view?usp=drive_link">
         <img src="images/yuluna-fanletter3.jpg" alt="" class="w-full h-40 object-cover rounded-lg mb-3">
         <p class="text-center font-semibold" data-i18n="me.oshikatsu.fan3"></p>
       </a>
 
-      <a href="https://drive.google.com/file/d/1xVEbhXaVV6Y1ibfvuS1zevJFsA61-cin/view?usp=drive_link" target="_blank"
-         class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
+      <a class="i18n-href block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+         target="_blank"
+         data-href-ja="https://drive.google.com/file/d/1T54Tz3e4GKz_7HExEyzVw93TY2d1uxq5/view?usp=drive_link"
+         data-href-en="https://drive.google.com/file/d/1xuUB1OuHiVv5YlGmSXUtJSC-PRdZHTmA/view?usp=drive_link"
+         data-href-zh="https://drive.google.com/file/d/1xuUB1OuHiVv5YlGmSXUtJSC-PRdZHTmA/view?usp=drive_link"
+		 
+		 ">
         <img src="images/yuluna-event.png" alt="" class="w-full h-40 object-cover rounded-lg mb-3">
         <p class="text-center font-semibold" data-i18n="me.oshikatsu.event"></p>
       </a>
@@ -502,8 +523,11 @@
   <!-- グッズ製作 -->
   <div class="mb-12">
     <h3 class="font-semibold text-xl mb-6 text-indigo-600 dark:text-indigo-400" data-i18n="me.goods.title"></h3>
-    <a href="https://drive.google.com/file/d/1PpYqKWlk4ljAUkix-eo1FsOS3fWpCzQU/view?usp=drive_link" target="_blank"
-       class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">
+    <a class="i18n-href block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+       target="_blank"
+       data-href-ja="https://drive.google.com/file/d/1PpYqKWlk4ljAUkix-eo1FsOS3fWpCzQU/view?usp=drive_link"
+       data-href-en="https://drive.google.com/file/d/1PpYqKWlk4ljAUkix-eo1FsOS3fWpCzQU/view?usp=drive_link"
+       data-href-zh="https://drive.google.com/file/d/1PpYqKWlk4ljAUkix-eo1FsOS3fWpCzQU/view?usp=drive_link">
       <img src="images/Elysia-goods.png" alt="" class="w-full h-56 object-cover rounded-lg mb-3">
       <p class="text-center font-semibold" data-i18n="me.goods.card"></p>
     </a>
@@ -595,7 +619,7 @@ const i18n = {
       role:{gd:"グラフィックデザイナー",ep:"イベント企画",pm:"ゲームプロジェクトマネージャー",op:"ゲーム運営",qa:"ゲームQA"},
       yahiro:{title: "2021–2022 八紘電機株式会社",catalog:"会社カタログ",pamphlet:"会社パンフレット",case:"会社制作事例"},
       ctw:{title: "2022–2023 CTW株式会社",kantai:"艦隊少女（サービス終了）",yamato:"宇宙戦艦ヤマト 未来への航路",ginei:"銀河英雄伝説 戦いの輪舞曲",wixoss:"ウィクロスマルチバース",seirei:"精霊幻想記アナザーテイル",kpi:"ギフト販売によるKPIの大幅な増加",event:"イベント企画と実行における成功事例"},
-      yostar:{title: "2023–現在 株式会社Yostar",qaCases:"アズールレーン QAテストケース",calc:"アズールレーン ダメージ計算ツール"}
+      yostar:{title: "2023–現在 株式会社Yostar",qaCases:"アズールレーン QAテストケース（中国語）",calc:"アズールレーン ダメージ計算ツール（中国語）"}
     },
     portfolio:{
       title:"3. 作品展示",
@@ -655,9 +679,9 @@ const i18n = {
     works:{
       title:"2. Work Highlights",
       role:{gd:"Graphic Designer",ep:"Event Planner",pm:"Game Project Manager",op:"Game Operation",qa:"Game QA Specialist"},
-      yahiro:{title: "2021–2022 Yahiro Electric Co., Ltd.",catalog:"Company Catalog",pamphlet:"Company Pamphlet",case:"Case Study"},
+      yahiro:{title: "2021–2022 Yahiro Electric Co., Ltd.",catalog:"Company Catalog（Japanese）",pamphlet:"Company Pamphlet（Japanese）",case:"Corporate Production Projects"},
       ctw:{title: "2022–2023 CTW Inc.",kantai:"Fleet Girls (Service Ended)",yamato:"Space Battleship Yamato: Voyage to the Future",ginei:"Legend of the Galactic Heroes",wixoss:"WIXOSS Multiverse",seirei:"Seirei Gensouki Another Tale",kpi:"Significant KPI Growth via Gifts",event:"Successful Event Planning & Execution"},
-      yostar:{title: "2023–Present Yostar Inc.",qaCases:"Azurlane QA Test Case",calc:"Azurlane Damage Calculator"}
+      yostar:{title: "2023–Present Yostar Inc.",qaCases:"Azurlane QA Test Case（Chinese）",calc:"Azurlane Damage Calculator（Chinese）"}
     },
     portfolio:{
       title:"3. Portfolio",
@@ -717,7 +741,7 @@ const i18n = {
     works:{
       title:"2. 工作成果一览",
       role:{gd:"平面设计",ep:"展会企划",pm:"游戏项目经理",op:"游戏运营",qa:"游戏QA"},
-      yahiro:{title: "2021–2022 八纮电器株式会社",catalog:"公司产品目录设计",pamphlet:"公司宣传册设计",case:"展会活动案例"},
+      yahiro:{title: "2021–2022 八纮电器株式会社",catalog:"公司产品目录设计（日文）",pamphlet:"公司宣传册设计（日文）",case:"公司制作案例"},
       ctw:{title: "2022–2023 CTW 株式会社",kantai:"舰队少女（已关服）",yamato:"宇宙战舰大和号：迈向未来的航路",ginei:"银河英雄传说",wixoss:"WIXOSS 多元宇宙",seirei:"精灵幻想记 Another Tale",kpi:"游戏礼包策划案例",event:"游戏活动策划案例"},
       yostar:{title: "2023–至今 株式会社Yostar",qaCases:"Azurlane QA测试用例",calc:"Azurlane 伤害计算器"}
     },
@@ -778,6 +802,64 @@ document.querySelectorAll(".lang-btn").forEach(btn=>{
 setLang(localStorage.getItem("lang") || "ja"); // 默认日语
 </script>
 
+<!-- ✅ 多语言外链 & PDF 帮手（放在 i18n 后面） -->
+<script>
+// 当前语言
+function getLang(){ return localStorage.getItem("lang") || "ja"; }
+
+// 按语言挑 data- 属性（stem = "link" 或 "href"）
+function pickByLang(el, stem){
+  const lang = getLang();
+  const suffix = lang === "ja" ? "Ja" : (lang === "en" ? "En" : "Zh");
+  const key = stem + suffix; // e.g. linkJa / hrefEn / hrefZh
+  return el.dataset[key] || el.dataset[stem] || el.getAttribute("href") || "#";
+}
+
+// 刷新普通外链（class="i18n-href"）
+function updateLocalizedHrefs(){
+  document.querySelectorAll("a.i18n-href").forEach(a=>{
+    a.setAttribute("href", pickByLang(a, "href"));
+  });
+}
+
+// 保留原 setLang，增强：切语言后刷新外链 & 重新挂载 Lucide 图标
+const __oldSetLang = window.setLang;
+window.setLang = function(lang){
+  __oldSetLang(lang);
+  updateLocalizedHrefs();
+  if(window.lucide?.createIcons){ window.lucide.createIcons(); }
+};
+
+// 初始刷新一次
+updateLocalizedHrefs();
+
+// PDF/受保护链接：按语言挑选 data-link-xx
+document.addEventListener('click', e => {
+  const a = e.target.closest('.pdf-link');
+  if (!a) return;
+  e.preventDefault();
+
+  const pdfMsg = {
+    ja:{prompt:"パスワードを入力してください:", error:"パスワードが間違っています！"},
+    en:{prompt:"Please enter the password:",    error:"Incorrect password!"},
+    zh:{prompt:"请输入密码：",                   error:"密码错误！"}
+  };
+  const lang = getLang();
+  const msg = pdfMsg[lang] || pdfMsg.ja;
+
+  const pwd = prompt(msg.prompt);
+  if (pwd === "lovely") {
+    const url = pickByLang(a, "link");
+    window.open(url, "_blank");
+  } else {
+    alert(msg.error);
+  }
+});
+</script>
+
+<!-- 保持在最后：确保图标初始挂载 -->
 <script>lucide.createIcons();</script>
 </body>
 </html>
+
+
